@@ -1,46 +1,40 @@
-//MainPage Product Click Event
 const mainProduct = document.querySelector(".common-product-hover");
 const productList = document.querySelector(".common-product-hover-menu");
 const header = document.querySelector("header");
-//MainPage Brand Click Event
+
 const mainbrand = document.querySelector(".common-brand-hover");
 const brandList = document.querySelector(".common-brand-hover-menu");
 const mainMake = document.querySelector(".common-makeup-hover");
 
+//MainPage Product Click Event
 mainProduct.addEventListener("mouseenter", () => {
-  productList.classList.add("common-active-product");
+  productList.classList.add("active");
   header.style.height = "464px";
-  header.classList.remove("active");
-  brandList.style.display = "none";
-  productList.style.display = "flex";
+  brandList.classList.remove("common-active-brand");
+  header.style.background = "rgba(255, 255, 255, 0);";
 });
-productList.addEventListener("mouseleave", () => {
-  productList.classList.remove("common-active-product");
+mainProduct.addEventListener("mouseleave", () => {
+  productList.classList.remove("active");
   header.style.height = "100px";
+  he;
 });
 
-// //MainPage Brand Click Event
-// const mainbrand = document.querySelector(".brand-hover");
-// const brandList = document.querySelector(".brand-hover-menu");
-
+//MainPage Brand Click Event
+console.log(mainbrand);
 mainbrand.addEventListener("mouseenter", () => {
   brandList.classList.add("common-active-brand");
-  brandList.style.display = "flex";
-  header.style.height = "464px";
-  header.classList.remove("active");
-  productList.style.display = "none";
+  header.style.height = "155px";
 });
 brandList.addEventListener("mouseleave", () => {
   brandList.classList.remove("common-active-brand");
   header.style.height = "100px";
 });
-
+//MainPage Makeup Click Event
 mainMake.addEventListener("mouseenter", () => {
-  mainMake.classList.add("common-makeup-active");
   brandList.classList.remove("common-active-brand");
+  header.style.height = "100px";
 });
 mainMake.addEventListener("mouseleave", () => {
-  mainMake.classList.remove("common-makeup-active");
   header.style.height = "100px";
 });
 
@@ -52,13 +46,13 @@ console.log(searchContent);
 searchClickOpen.onclick = () => {
   searchContent.classList.add("common-active-searchContent");
 };
-
 searchClickClose.onclick = () => {
   searchContent.classList.remove("common-active-searchContent");
 };
 
 //MainPage tigger Click Event
 const mainTrigger = document.querySelector(".common-toggle-btn");
+console.log(mainTrigger);
 const mainGnb = document.querySelector(".common-toggle-btn-click");
 
 // mainTrigger.addEventListener("click", () => {
@@ -92,9 +86,13 @@ const scrollHead = () => {
   if (window.scrollY > 0) {
     gototopBtn.classList.add("active");
     header.classList.add("active");
+    brandList.style.background = "none";
+    productList.style.background = "none";
   } else {
     gototopBtn.classList.remove("active");
     header.classList.remove("active");
+    brandList.style.background = "rgba(255, 255, 255, 0)";
+    productList.style.background = "rgba(255, 255, 255, 0)";
   }
 };
 
@@ -133,29 +131,20 @@ console.log(commonReToggleBtn);
 commonMenu.addEventListener("click", () => {
   commonMenu.classList.toggle("active");
   commonMenuList.classList.toggle("active");
-  commonCateList.style.display = "none";
   commonMenuList.style.display = "block";
+  commonCateList.style.display = "none";
   commonCate.style.borderBottom = "2px solid #777";
+  commonCate.style.color = "#777";
 });
 commonCate.addEventListener("click", () => {
-  commonCateList.style.display = "block";
-  commonMenuList.style.display = "none";
-  commonCate.style.borderBottom = "2px solid #111";
   commonCate.classList.toggle("active");
-  commonCateList.classList.toggle("active");
-  commonMenu.removeEventListener("click");
+  commonMenuList.style.display = "none";
+  commonCateList.style.display = "block";
+  commonCate.style.borderBottom = "2px solid #111";
+  commonCate.style.color = "#111";
 });
 
-// let size = document.getElementById("size");
-
-// window.onresize = function () {
-//   innerWidth <= "1024"
-//     ? (mainGnb.style.opacity = "0")
-//     : (mainGnb.style.opacity = "1");
-// };
-let innerWidth = window.innerWidth;
-
-mainTrigger.addEventListener("click", () => {
+const desktopToggle = () => {
   mainTrigger.classList.toggle("active");
   if (mainGnb.style.display === "none" || mainGnb.style.display === "") {
     mainGnb.style.display = "block";
@@ -164,20 +153,69 @@ mainTrigger.addEventListener("click", () => {
     mainGnb.style.display = "none";
     window.addEventListener("scroll", scrollHead);
   }
+};
+
+mainTrigger.addEventListener("click", desktopToggle);
+// console.log("click");
+
+let Width = window.innerWidth;
+window.addEventListener("resize", function () {
+  if (innerWidth <= 1024) {
+    mainTrigger.removeEventListener("click", desktopToggle);
+    mainTrigger.onclick = () => {
+      commonReToggleBtn.classList.add("active");
+    };
+  } else {
+    commonReToggleBtn.classList.remove("active");
+  }
 });
 
-if (innerWidth <= "1024") {
-  mainTrigger.addEventListener("click", () => {
-    commonReToggleBtn.classList.add("active");
-    mainGnb.style.opacity = "0";
-  });
-} else {
-  commonReToggleBtn.classList.remove("active");
-}
 commonReXbtn.onclick = () => {
   commonReToggleBtn.classList.remove("active");
-  mainGnb.style.opacity = "0";
 };
+
+window.addEventListener("resize", function () {
+  if (innerWidth > 1024) {
+    mainTrigger.addEventListener("click", desktopToggle);
+    mainTrigger.onclick = () => {
+      commonReToggleBtn.classList.remove("active");
+    };
+  } else {
+    commonReToggleBtn.classList.remove("active");
+  }
+});
+
+// window.addEventListener("resize", () => {
+//   let width = window.innerWidth;
+//   // width = window.innerWidth;
+//   console.log(width);
+//   if (width < 1024) {
+//     mainTrigger.addEventListener("click", () => {
+//       console.log("click");
+//       mainTrigger.onclick = () => {
+//         commonReToggleBtn.classList.add("active");
+//       };
+//     });
+//   } else if (width > 1024) {
+//     commonReToggleBtn.classList.remove("active");
+//     commonReToggleBtn.style.display = "none";
+//   }
+// });
+// let width = window.innerWidth;
+// window.addEventListener("resize", () => {
+//   // width = window.innerWidth;
+//   console.log(width);
+//   if (width < 1024) {
+//     mainTrigger.onclick = () => {
+//       mainGnb.style.display = "none";
+//       commonReToggleBtn.classList.add("active");
+//     };
+//   } else {
+//     mainTrigger.removeAttribute;
+//     mainGnb.style.display = "blocks";
+//     commonReToggleBtn.classList.remove("active");
+//   }
+// });
 
 //responsibility-Store Brand
 const RebrandStore = document.querySelector(
@@ -210,3 +248,17 @@ window.addEventListener("scroll", () => {
     addtocart.style.bottom = "10px";
   }
 });
+//반응형 삼단바 리스트 마우스 오버
+const CommonReTitle = document.querySelectorAll(".common-responsibility-menu");
+const CommonReList = document.querySelectorAll(
+  ".common-responsibility-menu-list "
+);
+const CommonMinusBtn = document.querySelectorAll(
+  ".common-responsibility-menu-plus span:nth-child(2)"
+);
+// CommonReTitle.addEventListener("click", () => {
+//   for (let i = 0; i < 9; i++) {
+//     CommonReList.classList.toggle("active");
+//     CommonMinusBtn.classList.toggle("active");
+//   }
+// });
