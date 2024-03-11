@@ -55,16 +55,6 @@ const mainTrigger = document.querySelector(".common-toggle-btn");
 console.log(mainTrigger);
 const mainGnb = document.querySelector(".common-toggle-btn-click");
 
-// mainTrigger.addEventListener("click", () => {
-//   mainTrigger.classList.toggle("active");
-//   if (mainGnb.style.display === "none" || mainGnb.style.display === "") {
-//     mainGnb.style.display = "block";
-//     window.removeEventListener("scroll", scrollHead);
-//   } else {
-//     mainGnb.style.display = "none";
-//     window.addEventListener("scroll", scrollHead);
-//   }
-// });
 //MainPage Store Brand
 const brandStore = document.querySelector(".common-brand-store-select");
 const brandStoreMenu = document.querySelector(".common-brand-store-select p");
@@ -127,7 +117,7 @@ const commonReXbtn = document.querySelector(
   ".common-responsibility-search-box-icon-x"
 );
 console.log(commonReToggleBtn);
-
+//반응형 menu, category
 commonMenu.addEventListener("click", () => {
   commonMenu.classList.toggle("active");
   commonMenuList.classList.toggle("active");
@@ -143,7 +133,7 @@ commonCate.addEventListener("click", () => {
   commonCate.style.borderBottom = "2px solid #111";
   commonCate.style.color = "#111";
 });
-
+//main 삼단바 버튼 + 반응형
 const desktopToggle = () => {
   mainTrigger.classList.toggle("active");
   if (mainGnb.style.display === "none" || mainGnb.style.display === "") {
@@ -156,7 +146,6 @@ const desktopToggle = () => {
 };
 
 mainTrigger.addEventListener("click", desktopToggle);
-// console.log("click");
 
 let Width = window.innerWidth;
 window.addEventListener("resize", function () {
@@ -184,38 +173,6 @@ window.addEventListener("resize", function () {
     commonReToggleBtn.classList.remove("active");
   }
 });
-
-// window.addEventListener("resize", () => {
-//   let width = window.innerWidth;
-//   // width = window.innerWidth;
-//   console.log(width);
-//   if (width < 1024) {
-//     mainTrigger.addEventListener("click", () => {
-//       console.log("click");
-//       mainTrigger.onclick = () => {
-//         commonReToggleBtn.classList.add("active");
-//       };
-//     });
-//   } else if (width > 1024) {
-//     commonReToggleBtn.classList.remove("active");
-//     commonReToggleBtn.style.display = "none";
-//   }
-// });
-// let width = window.innerWidth;
-// window.addEventListener("resize", () => {
-//   // width = window.innerWidth;
-//   console.log(width);
-//   if (width < 1024) {
-//     mainTrigger.onclick = () => {
-//       mainGnb.style.display = "none";
-//       commonReToggleBtn.classList.add("active");
-//     };
-//   } else {
-//     mainTrigger.removeAttribute;
-//     mainGnb.style.display = "blocks";
-//     commonReToggleBtn.classList.remove("active");
-//   }
-// });
 
 //responsibility-Store Brand
 const RebrandStore = document.querySelector(
