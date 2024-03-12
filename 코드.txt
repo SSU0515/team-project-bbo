@@ -1,0 +1,135 @@
+Desktop  Max width 1920
+
+section 1
+
+width 1920px
+height 1080px
+Bg : Linear gridiant rgb (245 226 226)
+
+>div .img (
+
+width 1344px
+height 1080px (100%)
+bg : url cover no-repeat
+
+)
+
+
+
+
+
+
+section 2
+
+width 1920px
+height 1080px
+
+>div .img (
+
+width 100%
+height 100%
+
+)
+
+
+
+
+
+
+section 3
+
+width 1920px
+height 1353px
+Bg : linear             
+
+>div
+
+display:flex
+width 1420px
+height 100%
+margin 0 auto
+
+
+>div > right and left
+
+width 710px
+hegiht 100%
+box-sizing : content-box
+(div 두개를 묶어서 처리)
+PL : 8px
+PR : 8px
+
+left > img
+
+width 578px
+height 651px
+margin 351 0px 351 124px
+
+right > div>
+
+width 702px
+height 743px
+position relative
+mt 127px
+
+right > div > img
+width 578px
+height 651px
+position absolute
+top 0
+left 0
+
+right > divtext > h1
+fz : 45px
+font Inter SemiBold
+Padding B 40px
+
+right > divtext02 p
+
+fz 14px
+font Noto Sans Kr Extra Light
+
+div text02 p 
+
+pb 20px
+
+right > gif
+
+width 118
+height 59
+
+Section04
+width 1920px
+height 790px
+
+section04-img
+width 1420px
+height 500px
+margin left 250px
+margin top 110px
+
+section05
+width 1920px
+height 790px
+div.img
+
+bg : img
+width 1536px
+height 790px
+좌우정렬 중앙정렬
+position relative
+
+div.text 
+position ab
+top 88
+left 250
+
+div.text01
+fz 45
+extrabold
+inter
+
+div.text02
+fz 18
+noto
+light
