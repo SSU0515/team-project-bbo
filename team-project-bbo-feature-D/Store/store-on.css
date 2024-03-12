@@ -1,0 +1,223 @@
+@import url(./reset.css);
+@import url(./header.css);
+
+/* ================= STORE PAGE ================= */
+/* ================= STORE PAGE ================= */
+/* ================= STORE PAGE ================= */
+/* ================= STORE PAGE ================= */
+/* ================= STORE PAGE ================= */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 820px;
+  position: relative;
+}
+.store-inner {
+  width: 1420px;
+  height: 100%;
+  /* border: 1px solid #ccc; */
+  position: absolute;
+  top: 100px;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+/* LEFT */
+
+#store-left {
+  /* border: 1px solid #f00; */
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#store-left > div > h1 {
+  font-family: "Noto Sans KR";
+  font-size: 30px;
+  font-weight: bold;
+  margin: 80px 10px 20px;
+}
+#store-menu {
+  /* border: 1px solid aqua; */
+  width: 202px;
+  height: 110px;
+  position: absolute;
+  top: 135px;
+  left: 0;
+  margin: 10px;
+}
+.online {
+  border: 1px solid #d9d9d9;
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  background: #f7f7f7;
+}
+.online p {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: bold;
+}
+.offline {
+  border: 1px solid #d9d9d9;
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.offline p {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* RIGHT - BRAND */
+
+#store-right {
+  /* border: 1px solid #00f; */
+  width: 1180px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.online-title {
+  margin: 80px 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.online-title > h1 {
+  font-family: "Noto Sans KR";
+  font-size: 24px;
+  font-weight: 400;
+}
+.online-title > p {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 200;
+  margin-left: 20px;
+}
+#brand {
+  width: 474px;
+  height: 605px;
+  /* border: 1px solid pink; */
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
+.brand {
+  width: 230px;
+  /* border: 1px solid orange; */
+}
+.logo-img {
+  margin-bottom: 10px;
+}
+.logo-name {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-name span:first-child {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: bold;
+}
+.logo-name span:last-child {
+  font-family: "Noto Sans KR";
+  font-size: 13px;
+  font-weight: 200;
+}
+#naver {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#olive {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#amore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#kakaogift {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* RIGHT - GLOBAL */
+
+#global {
+  /* border: 1px solid green; */
+  /* width: 630px;
+  height: 605px; */
+  position: absolute;
+  top: 140px;
+  right: 0;
+}
+#global > img {
+  width: 663px;
+  height: 600px;
+  position: relative;
+}
+.gb-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gb-name2:hover {
+  opacity: 0.6;
+}
+#korea {
+  position: absolute;
+  top: 168px;
+  left: 412px;
+}
+#india {
+  position: absolute;
+  top: 210px;
+  left: 180px;
+}
+#indonesia {
+  position: absolute;
+  top: 438px;
+  left: 260px;
+}
+#japan {
+  position: absolute;
+  top: 320px;
+  left: 490px;
+}
+#malaysia {
+  position: absolute;
+  top: 336px;
+  left: 205px;
+}
+#singapore {
+  position: absolute;
+  top: 378px;
+  left: 397px;
+}
+#thailand {
+  position: absolute;
+  top: 260px;
+  left: 270px;
+}
+#uae {
+  position: absolute;
+  top: 240px;
+  left: 50px;
+}
