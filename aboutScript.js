@@ -61,7 +61,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-section05ImgEvent();
+// section05ImgEvent();
 
 // if (scrollY > 4304) {
 //   section05Img.style.width = "100%";
@@ -70,3 +70,19 @@ section05ImgEvent();
 //   section05Img.style.width = "1536px";
 //   section05Img.style.height = "720px";
 // }
+
+//section 06 card event
+const section06TopImg = document.querySelectorAll([
+  ".card01",
+  ".card02",
+  ".card03",
+]);
+console.log(section06TopImg);
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 5230) {
+    section01Img.forEach((e) => {
+      e.target.classList.add("card0103");
+    });
+  }
+});
