@@ -35,11 +35,15 @@ window.addEventListener("wheel", (e) => {
         top: 2160,
         behavior: "smooth",
       });
+      section02Txt.style.top = "-60%";
+      section02Txt.style.transition = "all 1s";
     } else if (e.deltaY < 0) {
       window.scroll({
         top: 1080,
         behavior: "smooth",
       });
+      section02Txt.style.top = "40%";
+      section02Txt.style.transition = "all 1s";
     }
   }
 });
@@ -50,6 +54,7 @@ window.addEventListener("scroll", () => {
   if (scrollY > 4100) {
     section05Img.style.width = "100%";
     section05Img.style.height = "100%";
+    // section05Img.style.transition = "all 0.5s;";
   } else {
     section05Img.style.width = "1536px";
     section05Img.style.height = "720px";
