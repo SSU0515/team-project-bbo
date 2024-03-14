@@ -7,43 +7,47 @@ const section01EventFirst = () => {
 section01EventFirst();
 
 window.addEventListener("wheel", (e) => {
-  if (scrollY < 1080) {
-    if (e.deltaY > 0) {
-      window.scroll({
-        top: 1080,
-        behavior: "smooth",
-      });
-      section01Img.style.left = "600px";
-      section02Txt.style.top = "40%";
-      section02Txt.style.transition = "all 1s";
-    } else if (e.deltaY < 0) {
-      window.scroll({
-        top: 0,
-        behavior: "smooth",
-      });
-      section01Img.style.left = "20px";
-      section02Txt.style.top = "140%";
-      section02Txt.style.transition = "all 1s";
+  if (innerWidth > 1024) {
+    if (scrollY < 1080) {
+      if (e.deltaY > 0) {
+        window.scroll({
+          top: 1080,
+          behavior: "smooth",
+        });
+        section01Img.style.left = "600px";
+        section02Txt.style.top = "40%";
+        section02Txt.style.transition = "all 1s";
+      } else if (e.deltaY < 0) {
+        window.scroll({
+          top: 0,
+          behavior: "smooth",
+        });
+        section01Img.style.left = "20px";
+        section02Txt.style.top = "140%";
+        section02Txt.style.transition = "all 1s";
+      }
     }
   }
 });
 
 window.addEventListener("wheel", (e) => {
-  if (scrollY < 2160 && scrollY > 1080) {
-    if (e.deltaY > 0) {
-      window.scroll({
-        top: 2160,
-        behavior: "smooth",
-      });
-      section02Txt.style.top = "-60%";
-      section02Txt.style.transition = "all 1s";
-    } else if (e.deltaY < 0) {
-      window.scroll({
-        top: 1080,
-        behavior: "smooth",
-      });
-      section02Txt.style.top = "40%";
-      section02Txt.style.transition = "all 1s";
+  if (innerWidth > 1024) {
+    if (scrollY < 2160 && scrollY > 1080) {
+      if (e.deltaY > 0) {
+        window.scroll({
+          top: 2160,
+          behavior: "smooth",
+        });
+        section02Txt.style.top = "-60%";
+        section02Txt.style.transition = "all 1s";
+      } else if (e.deltaY < 0) {
+        window.scroll({
+          top: 1080,
+          behavior: "smooth",
+        });
+        section02Txt.style.top = "40%";
+        section02Txt.style.transition = "all 1s";
+      }
     }
   }
 });
@@ -72,17 +76,48 @@ window.addEventListener("scroll", () => {
 // }
 
 //section 06 card event
-const section06TopImg = document.querySelectorAll([
-  ".card01",
-  ".card02",
-  ".card03",
-]);
-console.log(section06TopImg);
+const section06TopImg = document.querySelectorAll(".cardTop");
+const section06BottomImg = document.querySelectorAll(".cardBottom");
 
 window.addEventListener("scroll", () => {
-  if (scrollY > 5230) {
-    section01Img.forEach((e) => {
-      e.target.classList.add("card0103");
+  if (innerWidth > 1024) {
+    if (scrollY > 5000) {
+      section06TopImg.forEach((e) => {
+        e.classList.add("card0103");
+      });
+    } else if (scrollY < 4100) {
+      section06TopImg.forEach((e) => {
+        e.classList.remove("card0103");
+      });
+    }
+  } else {
+    section06TopImg.forEach((e) => {
+      e.classList.add("card0103");
     });
+  }
+});
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 5800) {
+    section06BottomImg.forEach((e) => {
+      e.classList.add("card0406");
+    });
+  } else if (scrollY < 4100) {
+    section06BottomImg.forEach((e) => {
+      e.classList.remove("card0406");
+    });
+  }
+});
+
+//section 06 event2
+
+// const section06Event2 = document.querySelectorAll(".img-wrap02 img");
+const section06Event2 = document.querySelector(".img-wrap02");
+
+console.log(section06Event2);
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 6500) {
+    section06Event2.classList.add("imgWrap02Event");
   }
 });
