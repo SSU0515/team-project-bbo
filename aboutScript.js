@@ -1,5 +1,9 @@
+const rect = document.querySelector("div").getBoundingClientRect();
+console.log(rect);
+
 const section01Img = document.querySelector(".section01-sub img");
 const section02Txt = document.querySelector(".section02-txt");
+const section03 = document.querySelector(".section03");
 
 const section01EventFirst = () => {
   section01Img.style.left = "20px";
@@ -11,7 +15,7 @@ window.addEventListener("wheel", (e) => {
     if (scrollY < 1080) {
       if (e.deltaY > 0) {
         window.scroll({
-          top: 1080,
+          top: "1080",
           behavior: "smooth",
         });
         section01Img.style.left = "600px";
@@ -28,6 +32,19 @@ window.addEventListener("wheel", (e) => {
       }
     }
   }
+
+  window.addEventListener("wheel", (e) => {
+    if (innerWidth > 768 && innerWidth < 1024) {
+      if (scrollY < 1820) {
+        if (e.deltaY > 0) {
+          window.scroll({
+            top: 1820,
+            behavior: "smooth",
+          });
+        }
+      }
+    }
+  });
 });
 
 window.addEventListener("wheel", (e) => {
@@ -55,25 +72,14 @@ window.addEventListener("wheel", (e) => {
 const section05Img = document.querySelector(".section05-bgbox");
 
 window.addEventListener("scroll", () => {
-  if (scrollY > 4100) {
+  if (scrollY > 3800) {
     section05Img.style.width = "100%";
     section05Img.style.height = "100%";
-    // section05Img.style.transition = "all 0.5s;";
   } else {
     section05Img.style.width = "1536px";
     section05Img.style.height = "720px";
   }
 });
-
-// section05ImgEvent();
-
-// if (scrollY > 4304) {
-//   section05Img.style.width = "100%";
-//   section05Img.style.height = "100%";
-// } else {
-//   section05Img.style.width = "1536px";
-//   section05Img.style.height = "720px";
-// }
 
 //section 06 card event
 const section06TopImg = document.querySelectorAll(".cardTop");
@@ -111,13 +117,23 @@ window.addEventListener("scroll", () => {
 
 //section 06 event2
 
-// const section06Event2 = document.querySelectorAll(".img-wrap02 img");
-const section06Event2 = document.querySelector(".img-wrap02");
+const event06_1 = document.querySelector(".section06Simg01");
+const event06_2 = document.querySelector(".section06Simg02");
 
-console.log(section06Event2);
+console.log(event06_1);
 
 window.addEventListener("scroll", () => {
-  if (scrollY > 6500) {
-    section06Event2.classList.add("imgWrap02Event");
+  if (scrollY > 6800) {
+    event06_1.classList.add("imgWrap02Event");
+  } else if (scrollY < 6800) {
+    event06_1.classList.remove("imgWrap02Event");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 6800) {
+    event06_2.classList.add("imgWrap02Event");
+  } else if (scrollY < 6800) {
+    event06_2.classList.remove("imgWrap02Event");
   }
 });
