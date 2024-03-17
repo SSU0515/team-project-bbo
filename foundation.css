@@ -1381,16 +1381,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35.5rem;
+    /* height: 565px;
+    height: 35.3rem; */
+    /* height: 33%; */
     width: 100%;
     .foundation-banner-pc {
-      background: url("./foundation-image/img-foundation-banner-pc.jpg") center
+      background: url("./foundation-image/img-foundation-banner-pc.jpg") center 
         no-repeat;
       width: 100%;
-      height: inherit;
+      width: 88rem;
+      /* height: 35.3rem; */
+      aspect-ratio: 16 / 6.4;
       display: flex;
       position: relative;
-      background-size: contain;
+      background-size: cover;
       .foundation-banner-slogan {
         position: absolute;
         top: 50%;
@@ -1413,7 +1417,8 @@ body {
     flex-direction: column;
     align-items: center;
     .foundation-course-texts {
-      padding: 120px 0 30px 0;
+      /* padding: 120px 0 30px 0; */
+      padding: 7.5rem 0 2rem 0;
       display: block;
       .foundation-course-text1 {
         font: 500 32px/35px "Noto Sans KR", sans-serif;
@@ -1427,25 +1432,32 @@ body {
       }
     }
     .foundation-course-type {
+      width: 1420px;
       .foundation-course-A {
         display: flex;
+        max-width: 1420px;
         width: 100%;
-        margin-bottom: 113px;
+        /* margin-bottom: 113px; */
+        margin-bottom: 7rem;
         justify-content: center;
         .foundation-course-A-slide {
-          /* box-sizing: content-box; */
+          display: flex;
           position: relative;
-          /* cursor: grab; */
           /* width: 600px; */
           width: 37rem;
+          width: 42%;
           /* height: 733px; */
           height: 45.6rem;
           border-radius: 20px;
+          border-radius: 3%;
           overflow: hidden;
           display: flex;
           align-items: center;
           margin-right: 40px;
+          margin-right: 2.5rem;
+          /* margin-right: 2%; */
           .foundation-course-A-slide-imgs {
+            background-size: cover;
             display: flex;
             width: 100%;
             height: 100%;
@@ -1460,41 +1472,36 @@ body {
             .courseA1 {
               background: url("./foundation-image/factory-slide1.png") no-repeat
                 center center;
-              background-size: cover;
             }
             .courseA2 {
               background: url("./foundation-image/factory-slide2.png") no-repeat
                 center center;
-              background-size: cover;
             }
             .courseA3 {
               background: url("./foundation-image/factory-slide3.png") no-repeat
                 center center;
-              background-size: cover;
             }
             .courseA4 {
               background: url("./foundation-image/factory-slide4.png") no-repeat
                 center center;
-              background-size: cover;
             }
             .courseA5 {
               background: url("./foundation-image/factory-slide5.png") no-repeat
                 center center;
-              background-size: cover;
             }
             .courseA6 {
               background: url("./foundation-image/factory-slide6.png") no-repeat
                 center center;
-              background-size: cover;
             }
           }
           .foundation-course-A-slide-steps {
             position: absolute;
             top: 50%;
-            right: 18px;
+            right: 1.3rem;
             width: 100px;
             height: 100px;
-            margin-top: -50px;
+            /* margin-top: -50px; */
+            transform: translateY(-50%);
             z-index: 100;
             display: flex;
             overflow: hidden;
@@ -1508,41 +1515,47 @@ body {
             .stepA1 {
               background: url("./foundation-image/slide-step1.png") no-repeat
                 center center;
-              object-fit: cover;
             }
             .stepA2 {
               background: url("./foundation-image/slide-step2.png") no-repeat
                 center center;
-              object-fit: cover;
             }
             .stepA3 {
               background: url("./foundation-image/slide-step3.png") no-repeat
                 center center;
-              object-fit: cover;
             }
             .stepA4 {
               background: url("./foundation-image/slide-step4.png") no-repeat
                 center center;
-              object-fit: cover;
             }
             .stepA5 {
               background: url("./foundation-image/slide-step5.png") no-repeat
                 center center;
-              object-fit: cover;
             }
             .stepA6 {
               background: url("./foundation-image/slide-step6.png") no-repeat
                 center center;
-              object-fit: cover;
             }
           }
         }
         .foundation-course-A-content {
           /* width: 781px; */
+          /* width: 55%; */
           width: 48.5rem;
+          height: 100%;
           display: flex;
           flex-direction: column;
           .foundation-course-divider-h01 {
+            /* top: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5px; */
+            /* height: 0.2%; */
+            /* background: #777777;
+            margin-bottom: 15px;
+            margin-bottom: 1rem;
+            margin-bottom: 2%; */
+
             top: 0;
             left: 0;
             width: 100%;
@@ -1651,7 +1664,7 @@ body {
             height: auto;
             display: flex;
             .foundation-course-A-sub-c1 {
-              width: 86.4px;
+              /* width: 86.4px; */
               font: 400 18px/28.8px "Noto Sans KR", sans-serif;
               letter-spacing: -0.36px;
               color: #333333;
@@ -1809,21 +1822,25 @@ body {
       }
       .foundation-course-B {
         display: flex;
+        max-width: 1420px;
         width: 100%;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
+        margin-bottom: 6.5rem;
         justify-content: center;
         .foundation-course-B-slide {
+          display: flex;
           position: relative;
-          /* cursor: grab; */
           /* width: 600px; */
           width: 37rem;
+          width: 42%;
           /* height: 733px; */
           height: 45.6rem;
           border-radius: 20px;
+          border-radius: 3%;
           overflow: hidden;
-          display: flex;
           align-items: center;
           margin-right: 40px;
+          margin-right: 2.5rem;
           .foundation-course-B-slide-imgs {
             display: flex;
             width: 100%;
@@ -1839,31 +1856,28 @@ body {
             .courseB1 {
               background: url("./foundation-image/factory-slide1.png") no-repeat
                 center center;
-              background-size: cover;
             }
             .courseB2 {
               background: url("./foundation-image/factory-slide2.png") no-repeat
                 center center;
-              background-size: cover;
             }
             .courseB3 {
               background: url("./foundation-image/factory-slide4.png") no-repeat
                 center center;
-              background-size: cover;
             }
             .courseB4 {
               background: url("./foundation-image/factory-slide6.png") no-repeat
                 center center;
-              background-size: cover;
             }
           }
           .foundation-course-B-slide-steps {
             position: absolute;
             top: 50%;
-            right: 18px;
+            right: 1.3rem;
             width: 100px;
             height: 100px;
-            margin-top: -50px;
+            /* margin-top: -50px; */
+            transform: translateY(-50%);
             z-index: 100;
             display: flex;
             overflow: hidden;
@@ -1877,22 +1891,18 @@ body {
             .stepB1 {
               background: url("./foundation-image/slide-step1.png") no-repeat
                 center center;
-              object-fit: cover;
             }
             .stepB2 {
               background: url("./foundation-image/slide-step2.png") no-repeat
                 center center;
-              object-fit: cover;
             }
             .stepB3 {
               background: url("./foundation-image/slide-step3.png") no-repeat
                 center center;
-              object-fit: cover;
             }
             .stepB4 {
               background: url("./foundation-image/slide-step4.png") no-repeat
                 center center;
-              object-fit: cover;
             }
           }
         }
@@ -2592,11 +2602,12 @@ body {
 
 @media screen and (max-width: 1440px) {
   .foundation-body {
-    .foundation-banner {
+    width: 100%;
+    /* .foundation-banner {
       display: flex;
       justify-content: center;
       align-items: center;
-      /* height: 565px; */
+      height: 565px;
       max-width: 1420px;
       width: 100%;
       .foundation-banner-pc {
@@ -2623,6 +2634,1115 @@ body {
             display: none;
           }
         }
+      }
+    } */
+    .foundation-course {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .foundation-course-texts {
+        /* padding: 120px 0 30px 0; */
+        padding: 7.5rem 0 2rem 0;
+        display: block;
+        .foundation-course-text1 {
+          font: 500 32px/35px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.64px;
+          color: #111;
+        }
+        .foundation-course-text2 {
+          font: 600 24px/35px "sofia";
+          letter-spacing: -0.48px;
+          color: #d8a481;
+        }
+      }
+      .foundation-course-type {
+        width: 97%;
+        .foundation-course-A {
+          display: flex;
+          max-width: 1420px;
+          width: 100%;
+          margin-bottom: 7rem;
+          max-width: 1420px;
+          justify-content: center;
+          .foundation-course-A-slide {
+            background-size: cover;
+            display: flex;
+            position: relative;
+            /* width: 600px; */
+            width: 37rem;
+            width: 42%;
+            /* height: 733px; */
+            height: 45.6rem;
+            border-radius: 20px;
+            border-radius: 3%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+            margin-right: 2.5rem;
+            /* margin-right: 2%; */
+            .foundation-course-A-slide-imgs {
+              background-size: cover;
+              display: flex;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              .slide-course {
+                flex: 0 0 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .courseA1 {
+                background: url("./foundation-image/factory-slide1.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA2 {
+                background: url("./foundation-image/factory-slide2.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA3 {
+                background: url("./foundation-image/factory-slide3.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA4 {
+                background: url("./foundation-image/factory-slide4.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA5 {
+                background: url("./foundation-image/factory-slide5.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA6 {
+                background: url("./foundation-image/factory-slide6.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+            }
+            .foundation-course-A-slide-steps {
+              position: absolute;
+              top: 50%;
+              right: 1.3rem;
+              /* width: 100px; */
+              width: 100px;
+              aspect-ratio: 1 / 1;
+              height: 100px;
+              /* margin-top: -50px; */
+              transform: translateY(-50%);
+              z-index: 100;
+              display: flex;
+              overflow: hidden;
+              .slide-course-step {
+                aspect-ratio: 1 / 1;
+                flex: 0 0 100%;
+                width: 100px;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .stepA1 {
+                background: url("./foundation-image/slide-step1.png") no-repeat
+                  center center;
+              }
+              .stepA2 {
+                background: url("./foundation-image/slide-step2.png") no-repeat
+                  center center;
+              }
+              .stepA3 {
+                background: url("./foundation-image/slide-step3.png") no-repeat
+                  center center;
+              }
+              .stepA4 {
+                background: url("./foundation-image/slide-step4.png") no-repeat
+                  center center;
+              }
+              .stepA5 {
+                background: url("./foundation-image/slide-step5.png") no-repeat
+                  center center;
+              }
+              .stepA6 {
+                background: url("./foundation-image/slide-step6.png") no-repeat
+                  center center;
+              }
+            }
+          }
+          .foundation-course-A-content {
+            /* width: 781px; */
+            width: 48.5rem;
+            width: 55%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .foundation-course-divider-h01 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              /* height: 1.5px; */
+              /* height: 0.2%; */
+              background: #777777;
+              margin-bottom: 15px;
+              margin-bottom: 1rem;
+              margin-bottom: 2%;
+            }
+            .foundation-course-A-titles {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              .foundation-course-A-title {
+                font: 700 30px/30px "Amiri";
+                letter-spacing: -0.6px;
+                color: #111111;
+                margin: 0 25px;
+              }
+              .foundation-course-A-title2 {
+                font: 500 21px/24px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.42px;
+                color: #111111;
+                margin-right: 24px;
+              }
+              .foundation-course-A-title3 {
+                font: 400 21px/24px "sans-serif", sans-serif;
+                letter-spacing: -0.21px;
+                color: #d8a481;
+              }
+            }
+            .foundation-course-divider-h02 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #777777;
+              margin: 15px 0 12px 0;
+            }
+            .foundation-course-A-sub-a {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-a1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 60px 0 48px;
+              }
+              .foundation-course-divider-v01 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-A-sub-a2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h03 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 12px 0;
+            }
+            .foundation-course-A-sub-b {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-b1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 61px 0 41px;
+              }
+              .foundation-course-divider-v02 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-A-sub-b2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h04 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 20px 0;
+            }
+            .foundation-course-A-sub-c {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-c1 {
+                width: 86.4px;
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 200px 55px 0 48px;
+              }
+              .foundation-course-divider-img1 {
+                margin: 60px 50px 0 0;
+              }
+              .foundation-course-A-sub-d {
+                .foundation-course-A-sub-d1 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d1-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d1-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d2 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d2-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d2-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d3 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d3-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d3-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      width: 19rem;
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d4 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d4-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d4-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      width: 20rem;
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d5 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d5-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d5-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(3) {
+                      font: 400 14px/22px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #777;
+                      margin: 0 0 20px 8px;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d6 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d6-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d6-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      width: 20rem;
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .foundation-course-A {
+          display: flex;
+          max-width: 1420px;
+          width: 100%;
+          /* margin-bottom: 113px; */
+          margin-bottom: 7rem;
+          max-width: 1420px;
+          justify-content: center;
+          .foundation-course-A-slide {
+            background-size: cover;
+            display: flex;
+            position: relative;
+            /* width: 600px; */
+            width: 37rem;
+            width: 42%;
+            /* height: 733px; */
+            height: 45.6rem;
+            border-radius: 20px;
+            border-radius: 3%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+            margin-right: 2.5rem;
+            /* margin-right: 2%; */
+            .foundation-course-A-slide-imgs {
+              background-size: cover;
+              display: flex;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              .slide-course {
+                flex: 0 0 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .courseA1 {
+                background: url("./foundation-image/factory-slide1.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA2 {
+                background: url("./foundation-image/factory-slide2.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA3 {
+                background: url("./foundation-image/factory-slide3.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA4 {
+                background: url("./foundation-image/factory-slide4.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA5 {
+                background: url("./foundation-image/factory-slide5.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+              .courseA6 {
+                background: url("./foundation-image/factory-slide6.png") no-repeat
+                  center center;
+                /* background-size: contain; */
+              }
+            }
+            .foundation-course-A-slide-steps {
+              position: absolute;
+              top: 50%;
+              right: 1.3rem;
+              /* width: 100px; */
+              width: 100px;
+              aspect-ratio: 1 / 1;
+              /* height: 14%; */
+              /* margin-top: -50px; */
+              transform: translateY(-50%);
+              z-index: 100;
+              display: flex;
+              overflow: hidden;
+              .slide-course-step {
+                aspect-ratio: 1 / 1;
+                flex: 0 0 100%;
+                /* height: 100px; */
+                /* width: 100%; */
+              /* height: 100%; */
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .stepA1 {
+                background: url("./foundation-image/slide-step1.png") no-repeat
+                  center center;
+              }
+              .stepA2 {
+                background: url("./foundation-image/slide-step2.png") no-repeat
+                  center center;
+              }
+              .stepA3 {
+                background: url("./foundation-image/slide-step3.png") no-repeat
+                  center center;
+              }
+              .stepA4 {
+                background: url("./foundation-image/slide-step4.png") no-repeat
+                  center center;
+              }
+              .stepA5 {
+                background: url("./foundation-image/slide-step5.png") no-repeat
+                  center center;
+              }
+              .stepA6 {
+                background: url("./foundation-image/slide-step6.png") no-repeat
+                  center center;
+              }
+            }
+          }
+          .foundation-course-A-content {
+            /* width: 781px; */
+            width: 48.5rem;
+            width: 55%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .foundation-course-divider-h01 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              /* height: 1.5px; */
+              /* height: 0.2%; */
+              background: #777777;
+              margin-bottom: 15px;
+              margin-bottom: 1rem;
+              margin-bottom: 2%;
+            }
+            .foundation-course-A-titles {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              .foundation-course-A-title {
+                font: 700 30px/30px "Amiri";
+                letter-spacing: -0.6px;
+                color: #111111;
+                margin: 0 25px;
+              }
+              .foundation-course-A-title2 {
+                font: 500 21px/24px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.42px;
+                color: #111111;
+                margin-right: 24px;
+              }
+              .foundation-course-A-title3 {
+                font: 400 21px/24px "sans-serif", sans-serif;
+                letter-spacing: -0.21px;
+                color: #d8a481;
+              }
+            }
+            .foundation-course-divider-h02 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #777777;
+              margin: 15px 0 12px 0;
+            }
+            .foundation-course-A-sub-a {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-a1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 60px 0 48px;
+              }
+              .foundation-course-divider-v01 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-A-sub-a2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h03 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 12px 0;
+            }
+            .foundation-course-A-sub-b {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-b1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 61px 0 41px;
+              }
+              .foundation-course-divider-v02 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-A-sub-b2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h04 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 20px 0;
+            }
+            .foundation-course-A-sub-c {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-c1 {
+                width: 86.4px;
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 200px 55px 0 48px;
+              }
+              .foundation-course-divider-img1 {
+                margin: 60px 50px 0 0;
+              }
+              .foundation-course-A-sub-d {
+                .foundation-course-A-sub-d1 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d1-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d1-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d2 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d2-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d2-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d3 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d3-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d3-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      width: 19rem;
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d4 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d4-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d4-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      width: 20rem;
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d5 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d5-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d5-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(3) {
+                      font: 400 14px/22px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #777;
+                      margin: 0 0 20px 8px;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d6 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d6-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d6-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      width: 20rem;
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        /* .foundation-course-B {
+          display: flex;
+          width: 100%;
+          margin-bottom: 100px;
+          justify-content: center;
+          .foundation-course-B-slide {
+            position: relative;
+            width: 37rem;
+            height: 45.6rem;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+            .foundation-course-B-slide-imgs {
+              display: flex;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              .slide-courseB {
+                flex: 0 0 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .courseB1 {
+                background: url("./foundation-image/factory-slide1.png") no-repeat
+                  center center;
+                background-size: cover;
+              }
+              .courseB2 {
+                background: url("./foundation-image/factory-slide2.png") no-repeat
+                  center center;
+                background-size: cover;
+              }
+              .courseB3 {
+                background: url("./foundation-image/factory-slide4.png") no-repeat
+                  center center;
+                background-size: cover;
+              }
+              .courseB4 {
+                background: url("./foundation-image/factory-slide6.png") no-repeat
+                  center center;
+                background-size: cover;
+              }
+            }
+            .foundation-course-B-slide-steps {
+              position: absolute;
+              top: 50%;
+              right: 18px;
+              width: 100px;
+              height: 100px;
+              margin-top: -50px;
+              z-index: 100;
+              display: flex;
+              overflow: hidden;
+              .slide-course-stepB {
+                flex: 0 0 100%;
+                height: 100px;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .stepB1 {
+                background: url("./foundation-image/slide-step1.png") no-repeat
+                  center center;
+                object-fit: cover;
+              }
+              .stepB2 {
+                background: url("./foundation-image/slide-step2.png") no-repeat
+                  center center;
+                object-fit: cover;
+              }
+              .stepB3 {
+                background: url("./foundation-image/slide-step3.png") no-repeat
+                  center center;
+                object-fit: cover;
+              }
+              .stepB4 {
+                background: url("./foundation-image/slide-step4.png") no-repeat
+                  center center;
+                object-fit: cover;
+              }
+            }
+          }
+          .foundation-course-B-content {
+            width: 48.5rem;
+            display: flex;
+            flex-direction: column;
+            .foundation-course-divider-h01 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #777777;
+              margin-bottom: 15px;
+            }
+            .foundation-course-B-titles {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              .foundation-course-B-title {
+                font: 700 30px/30px "Amiri";
+                letter-spacing: -0.6px;
+                color: #111111;
+                margin: 0 25px;
+              }
+              .foundation-course-B-title2 {
+                font: 500 21px/24px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.42px;
+                color: #111111;
+                margin-right: 24px;
+              }
+              .foundation-course-B-title3 {
+                font: 400 21px/24px "sans-serif", sans-serif;
+                letter-spacing: -0.21px;
+                color: #d8a481;
+              }
+            }
+            .foundation-course-divider-h02 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #777777;
+              margin: 15px 0 12px 0;
+            }
+            .foundation-course-B-sub-a {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-B-sub-a1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 60px 0 48px;
+              }
+              .foundation-course-divider-v01 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-B-sub-a2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h03 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 12px 0;
+            }
+            .foundation-course-B-sub-b {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-B-sub-b1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 61px 0 41px;
+              }
+              .foundation-course-divider-v02 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-B-sub-b2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h04 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 20px 0;
+            }
+            .foundation-course-B-sub-c {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-B-sub-c1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 200px 55px 0 48px;
+              }
+              .foundation-course-divider-img1 {
+                margin: 60px 50px 0 0;
+              }
+              .foundation-course-B-sub-d {
+                .foundation-course-B-sub-d1 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-B-sub-d1-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-B-sub-d1-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d2 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-B-sub-d2-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-B-sub-d2-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d3 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-B-sub-d3-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-B-sub-d3-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      width: 19rem;
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d4 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-B-sub-d4-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-B-sub-d4-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      width: 20rem;
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        } */
       }
     }
   }
