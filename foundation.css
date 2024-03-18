@@ -1244,12 +1244,14 @@ body {
     }
   }
 }
+
 .foundation-body {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 100%;
   padding-top: 96px;
   #foundation-customized {
     display: block;
@@ -1258,6 +1260,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     padding-bottom: 100px;
+    background-size: contain;
     .foundation-customized-left {
       display: flex;
       flex-wrap: wrap;
@@ -1287,6 +1290,9 @@ body {
           font: 400 16px/24px "Noto Sans KR", sans-serif;
           letter-spacing: -0.32px;
           color: #333333;
+        }
+        .foundation-customized-text3-1024px {
+          display: none;
         }
       }
     }
@@ -1371,19 +1377,27 @@ body {
       display: none;
     }
   }
+  .foundation-course-gif-1024px {
+    display: none;
+  }
   .foundation-banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 565px;
+    /* height: 565px;
+    height: 35.3rem; */
+    /* height: 33%; */
     width: 100%;
     .foundation-banner-pc {
       background: url("./foundation-image/img-foundation-banner-pc.jpg") center
         no-repeat;
-      width: 1420px;
-      height: inherit;
+      width: 100%;
+      width: 88rem;
+      /* height: 35.3rem; */
+      aspect-ratio: 16 / 6.4;
       display: flex;
       position: relative;
+      background-size: cover;
       .foundation-banner-slogan {
         position: absolute;
         top: 50%;
@@ -1406,7 +1420,8 @@ body {
     flex-direction: column;
     align-items: center;
     .foundation-course-texts {
-      padding: 120px 0 30px 0;
+      /* padding: 120px 0 30px 0; */
+      padding: 7.5rem 0 2rem 0;
       display: block;
       .foundation-course-text1 {
         font: 500 32px/35px "Noto Sans KR", sans-serif;
@@ -1420,25 +1435,31 @@ body {
       }
     }
     .foundation-course-type {
+      width: 1420px;
       .foundation-course-A {
         display: flex;
+        max-width: 1420px;
         width: 100%;
-        margin-bottom: 113px;
+        /* margin-bottom: 113px; */
+        margin-bottom: 7rem;
         justify-content: center;
         .foundation-course-A-slide {
-          /* box-sizing: content-box; */
+          display: flex;
           position: relative;
-          /* cursor: grab; */
           /* width: 600px; */
           width: 37rem;
+          width: 42%;
           /* height: 733px; */
           height: 45.6rem;
           border-radius: 20px;
-          overflow: hidden;
-          display: flex;
+          border-radius: 3%;
           align-items: center;
           margin-right: 40px;
+          /* margin-right: 2%; */
+          margin-right: 2.5rem;
+          overflow: hidden;
           .foundation-course-A-slide-imgs {
+            background-size: cover;
             display: flex;
             width: 100%;
             height: 100%;
@@ -1451,43 +1472,38 @@ body {
               transition: transform 0.5s ease;
             }
             .courseA1 {
-              background: url("./foundation-image/factory-slide1.png") no-repeat center
-              center;
-              background-size: cover;
+              background: url("./foundation-image/factory-slide1.png") no-repeat
+                center center;
             }
             .courseA2 {
-              background: url("./foundation-image/factory-slide2.png") no-repeat center
-              center;
-              background-size: cover;
+              background: url("./foundation-image/factory-slide2.png") no-repeat
+                center center;
             }
             .courseA3 {
-              background: url("./foundation-image/factory-slide3.png") no-repeat center
-              center;
-              background-size: cover;
+              background: url("./foundation-image/factory-slide3.png") no-repeat
+                center center;
             }
             .courseA4 {
-              background: url("./foundation-image/factory-slide4.png") no-repeat center
-              center;
-              background-size: cover;
+              background: url("./foundation-image/factory-slide4.png") no-repeat
+                center center;
             }
             .courseA5 {
-              background: url("./foundation-image/factory-slide5.png") no-repeat center
-              center;
-              background-size: cover;
+              background: url("./foundation-image/factory-slide5.png") no-repeat
+                center center;
             }
             .courseA6 {
-              background: url("./foundation-image/factory-slide6.png") no-repeat center
-              center;
-              background-size: cover;
+              background: url("./foundation-image/factory-slide6.png") no-repeat
+                center center;
             }
           }
           .foundation-course-A-slide-steps {
             position: absolute;
             top: 50%;
-            right: 18px;
+            right: 1.3rem;
             width: 100px;
             height: 100px;
-            margin-top: -50px;
+            /* margin-top: -50px; */
+            transform: translateY(-50%);
             z-index: 100;
             display: flex;
             overflow: hidden;
@@ -1499,39 +1515,41 @@ body {
               transition: transform 0.5s ease;
             }
             .stepA1 {
-              background: url("./foundation-image/slide-step1.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step1.png") no-repeat
+                center center;
             }
             .stepA2 {
-              background: url("./foundation-image/slide-step2.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step2.png") no-repeat
+                center center;
             }
             .stepA3 {
-              background: url("./foundation-image/slide-step3.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step3.png") no-repeat
+                center center;
             }
             .stepA4 {
-              background: url("./foundation-image/slide-step4.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step4.png") no-repeat
+                center center;
             }
             .stepA5 {
-              background: url("./foundation-image/slide-step5.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step5.png") no-repeat
+                center center;
             }
             .stepA6 {
-              background: url("./foundation-image/slide-step6.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step6.png") no-repeat
+                center center;
             }
           }
         }
         .foundation-course-A-content {
           /* width: 781px; */
+          /* width: 55%; */
           width: 48.5rem;
+          height: 100%;
           display: flex;
           flex-direction: column;
           .foundation-course-divider-h01 {
             top: 0;
-            left: 0; 
+            left: 0;
             width: 100%;
             height: 1.5px;
             background: #777777;
@@ -1563,7 +1581,7 @@ body {
           }
           .foundation-course-divider-h02 {
             top: 0;
-            left: 0; 
+            left: 0;
             width: 100%;
             height: 1.5px;
             background: #777777;
@@ -1581,7 +1599,7 @@ body {
             }
             .foundation-course-divider-v01 {
               top: 0;
-              left: 0; 
+              left: 0;
               width: 1.5px;
               height: 28.781px;
               background: #333333;
@@ -1595,7 +1613,7 @@ body {
           }
           .foundation-course-divider-h03 {
             top: 0;
-            left: 0; 
+            left: 0;
             width: 100%;
             height: 1.5px;
             background: #a6a6a6;
@@ -1613,7 +1631,7 @@ body {
             }
             .foundation-course-divider-v02 {
               top: 0;
-              left: 0; 
+              left: 0;
               width: 1.5px;
               height: 28.781px;
               background: #333333;
@@ -1627,7 +1645,7 @@ body {
           }
           .foundation-course-divider-h04 {
             top: 0;
-            left: 0; 
+            left: 0;
             width: 100%;
             height: 1.5px;
             background: #a6a6a6;
@@ -1637,124 +1655,124 @@ body {
             width: 100%;
             height: auto;
             display: flex;
-            .foundation-course-A-sub-c1{
-              width: 86.4px;
+            .foundation-course-A-sub-c1 {
+              /* width: 86.4px; */
               font: 400 18px/28.8px "Noto Sans KR", sans-serif;
               letter-spacing: -0.36px;
               color: #333333;
               margin: 200px 55px 0 48px;
             }
-            .foundation-course-divider-img1{
+            .foundation-course-divider-img1 {
               margin: 60px 50px 0 0;
+              .foundation-course-divider-img1-1024px {
+                display: none;
+              }
             }
-            .foundation-course-A-sub-d{
-              .foundation-course-A-sub-d1{
+            .foundation-course-A-sub-d {
+              width: 65%;
+              .foundation-course-A-sub-d1 {
                 display: flex;
                 align-items: center;
                 margin-bottom: 12px;
-                .foundation-course-A-sub-d1-img{
+                .foundation-course-A-sub-d1-img {
                   margin-right: 10px;
                 }
-                .foundation-course-A-sub-d1-text{
+                .foundation-course-A-sub-d1-text {
                   margin-left: 16.5px;
                   p:nth-child(1) {
-                    font: 500 16px/26px "Noto Sans KR", sans-serif;
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.32px;
                     color: #111;
                   }
                   p:nth-child(2) {
-                    font: 400 14px/23px "Noto Sans KR", sans-serif;
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.28px;
                     color: #333;
                   }
                 }
               }
-              .foundation-course-A-sub-d2{
+              .foundation-course-A-sub-d2 {
                 display: flex;
                 align-items: center;
                 margin-bottom: 12px;
-                .foundation-course-A-sub-d2-img{
+                .foundation-course-A-sub-d2-img {
                   margin-right: 10px;
                 }
-                .foundation-course-A-sub-d2-text{
+                .foundation-course-A-sub-d2-text {
                   margin-left: 16.5px;
                   p:nth-child(1) {
-                    font: 500 16px/26px "Noto Sans KR", sans-serif;
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.32px;
                     color: #111;
                   }
                   p:nth-child(2) {
-                    font: 400 14px/23px "Noto Sans KR", sans-serif;
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.28px;
                     color: #333;
                   }
                 }
               }
-              .foundation-course-A-sub-d3{
+              .foundation-course-A-sub-d3 {
                 display: flex;
                 align-items: center;
                 margin-bottom: 12px;
-                .foundation-course-A-sub-d3-img{
+                .foundation-course-A-sub-d3-img {
                   margin-right: 10px;
                 }
-                .foundation-course-A-sub-d3-text{
-                  width: 257.375px;
+                .foundation-course-A-sub-d3-text {
                   margin-left: 16.5px;
                   p:nth-child(1) {
-                    font: 500 16px/26px "Noto Sans KR", sans-serif;
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.32px;
                     color: #111;
                   }
                   p:nth-child(2) {
-                    width: 19rem;
-                    font: 400 14px/23px "Noto Sans KR", sans-serif;
-                    letter-spacing: -0.28px;
-                    color: #333;
-                    word-break: keep-all;
-                  }
-                }
-              }
-              .foundation-course-A-sub-d4{
-                display: flex;
-                align-items: center;
-                margin-bottom: 12px;
-                .foundation-course-A-sub-d4-img{
-                  margin-right: 10px;
-                }
-                .foundation-course-A-sub-d4-text{
-                  width: 257.375px;
-                  margin-left: 16.5px;
-                  p:nth-child(1) {
-                    font: 500 16px/26px "Noto Sans KR", sans-serif;
-                    letter-spacing: -0.32px;
-                    color: #111;
-                  }
-                  p:nth-child(2) {
-                    width: 20rem;
-                    font: 400 14px/23px "Noto Sans KR", sans-serif;
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.28px;
                     color: #333;
                     word-break: keep-all;
                   }
                 }
               }
-              .foundation-course-A-sub-d5{
+              .foundation-course-A-sub-d4 {
                 display: flex;
                 align-items: center;
                 margin-bottom: 12px;
-                .foundation-course-A-sub-d5-img{
+                .foundation-course-A-sub-d4-img {
                   margin-right: 10px;
                 }
-                .foundation-course-A-sub-d5-text{
-                  width: 257.375px;
+                .foundation-course-A-sub-d4-text {
                   margin-left: 16.5px;
                   p:nth-child(1) {
-                    font: 500 16px/26px "Noto Sans KR", sans-serif;
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.32px;
                     color: #111;
                   }
                   p:nth-child(2) {
-                    font: 400 14px/23px "Noto Sans KR", sans-serif;
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.28px;
+                    color: #333;
+                    word-break: keep-all;
+                  }
+                }
+              }
+              .foundation-course-A-sub-d5 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+                .foundation-course-A-sub-d5-img {
+                  margin-right: 10px;
+                }
+                .foundation-course-A-sub-d5-text {
+                  width: 257.375px;
+                  margin-left: 16.5px;
+                  p:nth-child(1) {
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.32px;
+                    color: #111;
+                  }
+                  p:nth-child(2) {
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.28px;
                     color: #333;
                   }
@@ -1766,24 +1784,22 @@ body {
                   }
                 }
               }
-              .foundation-course-A-sub-d6{
+              .foundation-course-A-sub-d6 {
                 display: flex;
                 align-items: center;
                 margin-bottom: 12px;
-                .foundation-course-A-sub-d6-img{
+                .foundation-course-A-sub-d6-img {
                   margin-right: 10px;
                 }
-                .foundation-course-A-sub-d6-text{
-                  width: 257.375px;
+                .foundation-course-A-sub-d6-text {
                   margin-left: 16.5px;
                   p:nth-child(1) {
-                    font: 500 16px/26px "Noto Sans KR", sans-serif;
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.32px;
                     color: #111;
                   }
                   p:nth-child(2) {
-                    width: 20rem;
-                    font: 400 14px/23px "Noto Sans KR", sans-serif;
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
                     letter-spacing: -0.28px;
                     color: #333;
                     word-break: keep-all;
@@ -1793,64 +1809,69 @@ body {
             }
           }
         }
+        .foundation-course-A-1024px {
+          display: none;
+        }
       }
       .foundation-course-B {
         display: flex;
+        max-width: 1420px;
         width: 100%;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
+        margin-bottom: 6.5rem;
         justify-content: center;
         .foundation-course-B-slide {
+          display: flex;
           position: relative;
-          /* cursor: grab; */
           /* width: 600px; */
           width: 37rem;
+          width: 42%;
           /* height: 733px; */
           height: 45.6rem;
           border-radius: 20px;
-          overflow: hidden;
-          display: flex;
+          border-radius: 3%;
           align-items: center;
           margin-right: 40px;
+          margin-right: 2.5rem;
+          overflow: hidden;
           .foundation-course-B-slide-imgs {
-              display: flex;
-              width: 100%;
+            background-size: cover;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .slide-courseB {
+              flex: 0 0 100%;
               height: 100%;
-              overflow: hidden;
-              .slide-courseB {
-                flex: 0 0 100%;
-                height: 100%;
-                background-size: cover;
-                background-position: center;
-                transition: transform 0.5s ease;
+              background-size: cover;
+              background-position: center;
+              transition: transform 0.5s ease;
             }
             .courseB1 {
-              background: url("./foundation-image/factory-slide1.png") no-repeat center
-                center;
-                background-size: cover;
+              background: url("./foundation-image/factory-slide1.png") no-repeat
+                center center;
             }
             .courseB2 {
-              background: url("./foundation-image/factory-slide2.png") no-repeat center
-                center;
-                background-size: cover;
+              background: url("./foundation-image/factory-slide2.png") no-repeat
+                center center;
             }
             .courseB3 {
-              background: url("./foundation-image/factory-slide4.png") no-repeat center
-                center;
-                background-size: cover;
+              background: url("./foundation-image/factory-slide4.png") no-repeat
+                center center;
             }
             .courseB4 {
-              background: url("./foundation-image/factory-slide6.png") no-repeat center
-                center;
-                background-size: cover;
+              background: url("./foundation-image/factory-slide6.png") no-repeat
+                center center;
             }
           }
-          .foundation-course-B-slide-steps{
+          .foundation-course-B-slide-steps {
             position: absolute;
             top: 50%;
-            right: 18px;
+            right: 1.3rem;
             width: 100px;
             height: 100px;
-            margin-top: -50px;
+            /* margin-top: -50px; */
+            transform: translateY(-50%);
             z-index: 100;
             display: flex;
             overflow: hidden;
@@ -1862,240 +1883,244 @@ body {
               transition: transform 0.5s ease;
             }
             .stepB1 {
-              background: url("./foundation-image/slide-step1.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step1.png") no-repeat
+                center center;
             }
             .stepB2 {
-              background: url("./foundation-image/slide-step2.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step2.png") no-repeat
+                center center;
             }
             .stepB3 {
-              background: url("./foundation-image/slide-step3.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step3.png") no-repeat
+                center center;
             }
             .stepB4 {
-              background: url("./foundation-image/slide-step4.png") no-repeat center center;
-              object-fit: cover;
+              background: url("./foundation-image/slide-step4.png") no-repeat
+                center center;
             }
           }
-      }
-      .foundation-course-B-content {
-        /* width: 781px; */
-        width: 48.5rem;
-        display: flex;
-        flex-direction: column;
-        .foundation-course-divider-h01 {
-          top: 0;
-          left: 0; 
-          width: 100%;
-          height: 1.5px;
-          background: #777777;
-          margin-bottom: 15px;
         }
-        .foundation-course-B-titles {
-          width: 100%;
-          height: auto;
+        .foundation-course-B-content {
+          /* width: 781px; */
+          width: 48.5rem;
+          height: 100%;
           display: flex;
-          flex-direction: row;
-          align-items: baseline;
-          .foundation-course-B-title {
-            font: 700 30px/30px "Amiri";
-            letter-spacing: -0.6px;
-            color: #111111;
-            margin: 0 25px;
-          }
-          .foundation-course-B-title2 {
-            font: 500 21px/24px "Noto Sans KR", sans-serif;
-            letter-spacing: -0.42px;
-            color: #111111;
-            margin-right: 24px;
-          }
-          .foundation-course-B-title3 {
-            font: 400 21px/24px "sans-serif", sans-serif;
-            letter-spacing: -0.21px;
-            color: #d8a481;
-          }
-        }
-        .foundation-course-divider-h02 {
-          top: 0;
-          left: 0; 
-          width: 100%;
-          height: 1.5px;
-          background: #777777;
-          margin: 15px 0 12px 0;
-        }
-        .foundation-course-B-sub-a {
-          width: 100%;
-          height: auto;
-          display: flex;
-          .foundation-course-B-sub-a1 {
-            font: 400 18px/28.8px "Noto Sans KR", sans-serif;
-            letter-spacing: -0.36px;
-            color: #333333;
-            margin: 0 60px 0 48px;
-          }
-          .foundation-course-divider-v01 {
+          flex-direction: column;
+          .foundation-course-divider-h01 {
             top: 0;
-            left: 0; 
-            width: 1.5px;
-            height: 28.781px;
-            background: #333333;
-            margin-right: 60px;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: #777777;
+            margin-bottom: 15px;
           }
-          .foundation-course-B-sub-a2 {
-            font: 400 18px/28.8px "Noto Sans KR", sans-serif;
-            letter-spacing: -0.36px;
-            color: #333333;
+          .foundation-course-B-titles {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            .foundation-course-B-title {
+              font: 700 30px/30px "Amiri";
+              letter-spacing: -0.6px;
+              color: #111111;
+              margin: 0 25px;
+            }
+            .foundation-course-B-title2 {
+              font: 500 21px/24px "Noto Sans KR", sans-serif;
+              letter-spacing: -0.42px;
+              color: #111111;
+              margin-right: 24px;
+            }
+            .foundation-course-B-title3 {
+              font: 400 21px/24px "sans-serif", sans-serif;
+              letter-spacing: -0.21px;
+              color: #d8a481;
+            }
           }
-        }
-        .foundation-course-divider-h03 {
-          top: 0;
-          left: 0; 
-          width: 100%;
-          height: 1.5px;
-          background: #a6a6a6;
-          margin: 12px 0 12px 0;
-        }
-        .foundation-course-B-sub-b {
-          width: 100%;
-          height: auto;
-          display: flex;
-          .foundation-course-B-sub-b1 {
-            font: 400 18px/28.8px "Noto Sans KR", sans-serif;
-            letter-spacing: -0.36px;
-            color: #333333;
-            margin: 0 61px 0 41px;
-          }
-          .foundation-course-divider-v02 {
+          .foundation-course-divider-h02 {
             top: 0;
-            left: 0; 
-            width: 1.5px;
-            height: 28.781px;
-            background: #333333;
-            margin-right: 60px;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: #777777;
+            margin: 15px 0 12px 0;
           }
-          .foundation-course-B-sub-b2 {
-            font: 400 18px/28.8px "Noto Sans KR", sans-serif;
-            letter-spacing: -0.36px;
-            color: #333333;
+          .foundation-course-B-sub-a {
+            width: 100%;
+            height: auto;
+            display: flex;
+            .foundation-course-B-sub-a1 {
+              font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+              letter-spacing: -0.36px;
+              color: #333333;
+              margin: 0 60px 0 48px;
+            }
+            .foundation-course-divider-v01 {
+              top: 0;
+              left: 0;
+              width: 1.5px;
+              height: 28.781px;
+              background: #333333;
+              margin-right: 60px;
+            }
+            .foundation-course-B-sub-a2 {
+              font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+              letter-spacing: -0.36px;
+              color: #333333;
+            }
+          }
+          .foundation-course-divider-h03 {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: #a6a6a6;
+            margin: 12px 0 12px 0;
+          }
+          .foundation-course-B-sub-b {
+            width: 100%;
+            height: auto;
+            display: flex;
+            .foundation-course-B-sub-b1 {
+              font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+              letter-spacing: -0.36px;
+              color: #333333;
+              margin: 0 61px 0 41px;
+            }
+            .foundation-course-divider-v02 {
+              top: 0;
+              left: 0;
+              width: 1.5px;
+              height: 28.781px;
+              background: #333333;
+              margin-right: 60px;
+            }
+            .foundation-course-B-sub-b2 {
+              font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+              letter-spacing: -0.36px;
+              color: #333333;
+            }
+          }
+          .foundation-course-divider-h04 {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: #a6a6a6;
+            margin: 12px 0 20px 0;
+          }
+          .foundation-course-B-sub-c {
+            width: 100%;
+            height: auto;
+            display: flex;
+            .foundation-course-B-sub-c1 {
+              font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+              letter-spacing: -0.36px;
+              color: #333333;
+              margin: 200px 55px 0 48px;
+            }
+            .foundation-course-divider-img1 {
+              margin: 60px 50px 0 0;
+              .foundation-course-divider-img1-1024px {
+                display: none;
+              }
+            }
+            .foundation-course-B-sub-d {
+              width: 65%;
+              .foundation-course-B-sub-d1 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+                .foundation-course-B-sub-d1-img {
+                  margin-right: 10px;
+                }
+                .foundation-course-B-sub-d1-text {
+                  margin-left: 16.5px;
+                  p:nth-child(1) {
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.32px;
+                    color: #111;
+                  }
+                  p:nth-child(2) {
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.28px;
+                    color: #333;
+                  }
+                }
+              }
+              .foundation-course-B-sub-d2 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+                .foundation-course-B-sub-d2-img {
+                  margin-right: 10px;
+                }
+                .foundation-course-B-sub-d2-text {
+                  margin-left: 16.5px;
+                  p:nth-child(1) {
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.32px;
+                    color: #111;
+                  }
+                  p:nth-child(2) {
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.28px;
+                    color: #333;
+                  }
+                }
+              }
+              .foundation-course-B-sub-d3 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+                .foundation-course-B-sub-d3-img {
+                  margin-right: 10px;
+                }
+                .foundation-course-B-sub-d3-text {
+                  margin-left: 16.5px;
+                  p:nth-child(1) {
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.32px;
+                    color: #111;
+                  }
+                  p:nth-child(2) {
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.28px;
+                    color: #333;
+                    word-break: keep-all;
+                  }
+                }
+              }
+              .foundation-course-B-sub-d4 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+                .foundation-course-B-sub-d4-img {
+                  margin-right: 10px;
+                }
+                .foundation-course-B-sub-d4-text {
+                  margin-left: 16.5px;
+                  p:nth-child(1) {
+                    font: 500 18px/26px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.32px;
+                    color: #111;
+                  }
+                  p:nth-child(2) {
+                    font: 400 16px/23px "Noto Sans KR", sans-serif;
+                    letter-spacing: -0.28px;
+                    color: #333;
+                    word-break: keep-all;
+                  }
+                }
+              }
+            }
           }
         }
-        .foundation-course-divider-h04 {
-          top: 0;
-          left: 0; 
-          width: 100%;
-          height: 1.5px;
-          background: #a6a6a6;
-          margin: 12px 0 20px 0;
-        }
-        .foundation-course-B-sub-c {
-          width: 100%;
-          height: auto;
-          display: flex;
-          .foundation-course-B-sub-c1{
-            font: 400 18px/28.8px "Noto Sans KR", sans-serif;
-            letter-spacing: -0.36px;
-            color: #333333;
-            margin: 200px 55px 0 48px;
-          }
-          .foundation-course-divider-img1{
-            margin: 60px 50px 0 0;
-          }
-          .foundation-course-B-sub-d{
-            .foundation-course-B-sub-d1{
-              display: flex;
-              align-items: center;
-              margin-bottom: 12px;
-              .foundation-course-B-sub-d1-img{
-                margin-right: 10px;
-              }
-              .foundation-course-B-sub-d1-text{
-                margin-left: 16.5px;
-                p:nth-child(1) {
-                  font: 500 16px/26px "Noto Sans KR", sans-serif;
-                  letter-spacing: -0.32px;
-                  color: #111;
-                }
-                p:nth-child(2) {
-                  font: 400 14px/23px "Noto Sans KR", sans-serif;
-                  letter-spacing: -0.28px;
-                  color: #333;
-                }
-              }
-            }
-            .foundation-course-B-sub-d2{
-              display: flex;
-              align-items: center;
-              margin-bottom: 12px;
-              .foundation-course-B-sub-d2-img{
-                margin-right: 10px;
-              }
-              .foundation-course-B-sub-d2-text{
-                margin-left: 16.5px;
-                p:nth-child(1) {
-                  font: 500 16px/26px "Noto Sans KR", sans-serif;
-                  letter-spacing: -0.32px;
-                  color: #111;
-                }
-                p:nth-child(2) {
-                  font: 400 14px/23px "Noto Sans KR", sans-serif;
-                  letter-spacing: -0.28px;
-                  color: #333;
-                }
-              }
-            }
-            .foundation-course-B-sub-d3{
-              display: flex;
-              align-items: center;
-              margin-bottom: 12px;
-              .foundation-course-B-sub-d3-img{
-                margin-right: 10px;
-              }
-              .foundation-course-B-sub-d3-text{
-                width: 257.375px;
-                margin-left: 16.5px;
-                p:nth-child(1) {
-                  font: 500 16px/26px "Noto Sans KR", sans-serif;
-                  letter-spacing: -0.32px;
-                  color: #111;
-                }
-                p:nth-child(2) {
-                  width: 19rem;
-                  font: 400 14px/23px "Noto Sans KR", sans-serif;
-                  letter-spacing: -0.28px;
-                  color: #333;
-                  word-break: keep-all;
-                }
-              }
-            }
-            .foundation-course-B-sub-d4{
-              display: flex;
-              align-items: center;
-              margin-bottom: 12px;
-              .foundation-course-B-sub-d4-img{
-                margin-right: 10px;
-              }
-              .foundation-course-B-sub-d4-text{
-                width: 257.375px;
-                margin-left: 16.5px;
-                p:nth-child(1) {
-                  font: 500 16px/26px "Noto Sans KR", sans-serif;
-                  letter-spacing: -0.32px;
-                  color: #111;
-                }
-                p:nth-child(2) {
-                  width: 20rem;
-                  font: 400 14px/23px "Noto Sans KR", sans-serif;
-                  letter-spacing: -0.28px;
-                  color: #333;
-                  word-break: keep-all;
-                }
-              }
-            }
-          }
+        .foundation-course-B-1024px {
+          display: none;
         }
       }
-    }
     }
   }
   .foundation-reservation {
@@ -2124,7 +2149,8 @@ body {
   }
   .foundation-6steps {
     margin: 118px 0 70px 0;
-    width: 100%;
+    width: 96%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2132,7 +2158,11 @@ body {
       display: flex;
       flex-direction: column;
       align-content: center;
-      width: 1420px;
+      /* width: 1420px; */
+      width: 98%;
+      height: 100%;
+      max-width: 1420px;
+      padding-left: 20px;
       .foundation-6step-text1 {
         text-align: center;
         width: 100%;
@@ -2148,7 +2178,7 @@ body {
         color: #d8a481;
       }
       .foundation-6step-text3 {
-        text-align: right; 
+        text-align: right;
         width: 100%;
         color: #333;
         font-size: 15px;
@@ -2160,163 +2190,35 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 1420px;
-      .foundation-6step-imgsA {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2.5px;
-        .foundation-6step-imgsA-1 {
-          background: url("./foundation-image/5-1.jpg") center center / cover no-repeat;
-          position: relative;
-          margin-right: 0.3rem;
-          width: 29.5rem;
-          height: 22rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .foundation-6step-imgsA-1text {
-            text-align: center; 
-            display: flex;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            h1 {
-              font: 600 32px/35px "sofia-pro";
-              color: #fff;
-              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              opacity: 0;
-              transition: opacity 0.3s;
-              z-index: 2;
-            }
-            h1:nth-child(2) {
-              font-weight: 300;
-            }
-            &:hover h1 {
-              opacity: 1;
-            }
-            &:hover::after {
-              content: "";
-              /* display: block; */
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              transition: 0.3s;
-              background: rgba(17, 17, 17, 0.4);
-            }
-          }
-        }
-        .foundation-6step-imgsA-2 {
-          background: url("./foundation-image/5-2.jpg") center center / cover no-repeat;
-          position: relative;
-          margin-right: 0.3rem;
-          width: 29.5rem;
-          height: 22rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .foundation-6step-imgsA-2text {
-            text-align: center; 
-            display: flex;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            h1 {
-              font: 600 32px/35px "sofia-pro";
-              color: #fff;
-              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              opacity: 0;
-              transition: opacity 0.3s;
-              z-index: 2;
-            }
-            h1:nth-child(2) {
-              font-weight: 300;
-            }
-            &:hover h1 {
-              opacity: 1;
-            }
-            &:hover::after {
-              content: "";
-              /* display: block; */
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              transition: 0.3s;
-              background: rgba(17, 17, 17, 0.4);
-            }
-          }
-        }
-        .foundation-6step-imgsA-3 {
-          background: url("./foundation-image/5-3.jpg") center center / cover no-repeat;
-          position: relative;
-          margin-right: 0.3rem;
-          width: 29.5rem;
-          height: 22rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .foundation-6step-imgsA-3text {
-            text-align: center; 
-            display: flex;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            h1 {
-              font: 600 32px/35px "sofia-pro";
-              color: #fff;
-              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              opacity: 0;
-              transition: opacity 0.3s;
-              z-index: 2;
-            }
-            h1:nth-child(2) {
-              font-weight: 300;
-            }
-            &:hover h1 {
-              opacity: 1;
-            }
-            &:hover::after {
-              content: "";
-              /* display: block; */
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              transition: 0.3s;
-              background: rgba(17, 17, 17, 0.4);
-            }
-          }
-        }
-      }
+      max-width: 1420px;
+      width: 100%;
+      height: 100%;
+      .foundation-6step-imgsA,
       .foundation-6step-imgsB {
         display: flex;
+        max-width: 1420px;
+        width: 100%;
+        height: calc(100% / 2);
+        margin-bottom: 0.3rem;
         justify-content: center;
-        margin-bottom: 2.5px;
-        .foundation-6step-imgsB-4 {
-          background: url("./foundation-image/5-4.jpg") center center / cover no-repeat;
+        background-size: cover;
+        .foundation-6step-imgsA-1,
+        .foundation-6step-imgsA-2,
+        .foundation-6step-imgsA-3,
+        .foundation-6step-imgsB-4,
+        .foundation-6step-imgsB-5,
+        .foundation-6step-imgsB-6 {
           position: relative;
-          margin-right: 0.3rem;
-          width: 29.5rem;
-          height: 22rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          .foundation-6step-imgsB-4text {
-            text-align: center; 
+          width: 33.3%;
+          width: 29.5rem;
+          aspect-ratio: 16 / 12;
+          margin-right: 0.3rem;
+          .foundation-6step-imgs-text {
+            text-align: center;
             display: flex;
             position: absolute;
             width: 100%;
@@ -2341,7 +2243,6 @@ body {
             }
             &:hover::after {
               content: "";
-              /* display: block; */
               position: absolute;
               width: 100%;
               height: 100%;
@@ -2349,109 +2250,46 @@ body {
               background: rgba(17, 17, 17, 0.4);
             }
           }
+        }
+        .foundation-6step-imgsA-1 {
+          background: url("./foundation-image/5-1.jpg") center center / cover
+            no-repeat;
+        }
+        .foundation-6step-imgsA-2 {
+          background: url("./foundation-image/5-2.jpg") center center / cover
+            no-repeat;
+        }
+        .foundation-6step-imgsA-3 {
+          background: url("./foundation-image/5-3.jpg") center center / cover
+            no-repeat;
+        }
+        .foundation-6step-imgsB-4 {
+          background: url("./foundation-image/5-4.jpg") center center / cover
+            no-repeat;
         }
         .foundation-6step-imgsB-5 {
-          background: url("./foundation-image/5-5.jpg") center center / cover no-repeat;
-          position: relative;
-          margin-right: 0.3rem;
-          width: 29.5rem;
-          height: 22rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .foundation-6step-imgsB-5text {
-            text-align: center; 
-            display: flex;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            h1 {
-              font: 600 32px/35px "sofia-pro";
-              color: #fff;
-              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              opacity: 0;
-              transition: opacity 0.3s;
-              z-index: 2;
-            }
-            h1:nth-child(2) {
-              font-weight: 300;
-            }
-            &:hover h1 {
-              opacity: 1;
-            }
-            &:hover::after {
-              content: "";
-              /* display: block; */
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              transition: 0.3s;
-              background: rgba(17, 17, 17, 0.4);
-            }
-          }
+          background: url("./foundation-image/5-5.jpg") center center / cover
+            no-repeat;
         }
         .foundation-6step-imgsB-6 {
-          background: url("./foundation-image/5-6.jpg") center center / cover no-repeat;
-          position: relative;
-          margin-right: 0.3rem;
-          width: 29.5rem;
-          height: 22rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .foundation-6step-imgsB-6text {
-            text-align: center; 
-            display: flex;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            h1 {
-              font: 600 32px/35px "sofia-pro";
-              color: #fff;
-              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              opacity: 0;
-              transition: opacity 0.3s;
-              z-index: 2;
-            }
-            h1:nth-child(2) {
-              font-weight: 300;
-            }
-            &:hover h1 {
-              opacity: 1;
-            }
-            &:hover::after {
-              content: "";
-              /* display: block; */
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              transition: 0.3s;
-              background: rgba(17, 17, 17, 0.4);
-            }
-          }
+          background: url("./foundation-image/5-6.jpg") center center / cover
+            no-repeat;
         }
       }
     }
+    .foundation-6step-imgs-1024px {
+      display: none;
+    }
   }
-  #foundation-caution{
+  #foundation-caution {
     /* width: 100%; */
     /* width: 1420px; */
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: left;
     margin: 0 227.508px 70px 227.508px;
     padding: 30px 45px;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     .foundation-caution-title {
       display: flex;
       .foundation-caution-title-icon {
@@ -2465,7 +2303,7 @@ body {
     }
     .foundation-caution-divider {
       top: 0;
-      left: 0; 
+      left: 0;
       width: 1330px;
       height: 1.5px;
       background: #777;
@@ -2532,6 +2370,979 @@ body {
             content: "·";
             position: absolute;
             left: -15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .foundation-body {
+    width: 100%;
+    #foundation-customized {
+      display: block;
+      display: flex;
+      justify-content: center;
+      /* flex-direction: row; */
+      /* flex-wrap: nowrap; */
+      padding-bottom: 100px;
+      /* background-size: contain; */
+      width: 100%;
+      max-width: 1420px;
+      .foundation-customized-left {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        align-items: flex-start;
+        width: 410px;
+        /* margin-right: 30px; */
+        margin-right: 0;
+        padding-left: 20px;
+        .foundation-customized-text1 {
+          width: 100%;
+          font: 500 32px/51.2px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.64px;
+          color: #111;
+          margin-right: 24px;
+        }
+        .foundation-customized-text2 {
+          width: 100%;
+          margin-bottom: 40px;
+          font: 700 24px/38.4px "sofia";
+          letter-spacing: -0.48px;
+          color: #d8a481;
+        }
+        .foundation-customized-text3 {
+          width: 100%;
+          p {
+            display: block;
+            font: 400 16px/24px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.32px;
+            color: #333333;
+          }
+          .foundation-customized-text3-1024px {
+            display: none;
+          }
+        }
+      }
+      .foundation-customized-right {
+        width: 570px;
+        padding: 0px 20px;
+        .foundation-customized-items {
+          .foundation-customized-item1,
+          .foundation-customized-item2,
+          .foundation-customized-item3,
+          .foundation-customized-item4 {
+            display: flex;
+            padding-bottom: 9px;
+            align-items: center;
+            .foundation-customized-icon {
+              height: 38px;
+              svg {
+                width: 38px;
+                height: 38px;
+                font: 400 14px/22.4px;
+                color: #777;
+                margin: 0 4.75px;
+              }
+            }
+            .foundation-customized-list {
+              font-size: 17px;
+              line-height: 32px;
+              display: flex;
+              padding-left: 5px;
+              .foundation-customized-title {
+                font: 500 16px/26px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                overflow-wrap: break-word;
+                word-break: keep-all;
+                vertical-align: baseline;
+                color: #111;
+                margin-right: 40px;
+              }
+              .foundation-customized-sub {
+                font: 400 14px/28px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                overflow-wrap: break-word;
+                word-break: keep-all;
+                vertical-align: baseline;
+                color: #111;
+              }
+            }
+          }
+          .foundation-customized-item2,
+          .foundation-customized-item3 {
+            margin-top: 9px;
+            .foundation-customized-sub2 {
+              font: 400 14px/30px "Noto Sans KR", sans-serif;
+              letter-spacing: -0.02em;
+              vertical-align: baseline;
+              color: #777;
+              margin-left: 20px;
+            }
+          }
+          .foundation-customized-item4 {
+            padding-bottom: 0px;
+            margin-top: 9px;
+            position: absolute;
+            .foundation-customized-list {
+              .foundation-customized-sub {
+                font: 400 14px/28px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                overflow-wrap: break-word;
+                word-break: keep-all;
+                vertical-align: baseline;
+                color: #111;
+              }
+            }
+          }
+        }
+      }
+      .foundation-customized-png-max1024 {
+        display: none;
+      }
+    }
+    .foundation-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 565px;
+      height: 35.3rem; */
+      /* height: 33%; */
+      width: 100%;
+      .foundation-banner-pc {
+        background: url("./foundation-image/img-foundation-banner-pc.jpg")
+          center no-repeat;
+        width: 100%;
+        width: 88rem;
+        /* height: 35.3rem; */
+        aspect-ratio: 16 / 6.4;
+        display: flex;
+        position: relative;
+        background-size: cover;
+        .foundation-banner-slogan {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 750px;
+          align-content: flex-start;
+          li {
+            font: 500 45px/54px "Subway";
+            letter-spacing: -0.02em;
+            color: #fff;
+            display: none;
+          }
+        }
+      }
+    }
+    .foundation-course {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      .foundation-course-texts {
+        padding: 7.5rem 0 2rem 0;
+        display: block;
+        .foundation-course-text1 {
+          font: 500 32px/35px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.64px;
+          color: #111;
+        }
+        .foundation-course-text2 {
+          font: 600 24px/35px "sofia";
+          letter-spacing: -0.48px;
+          color: #d8a481;
+        }
+      }
+      .foundation-course-type {
+        width: 100%;
+        .foundation-course-A {
+          display: flex;
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 7rem;
+          justify-content: center;
+          .foundation-course-A-slide {
+            display: flex;
+            position: relative;
+            align-items: center;
+            background-size: cover;
+            width: 37rem;
+            width: 38%;
+            height: 45.6rem;
+            border-radius: 20px;
+            border-radius: 3%;
+            margin-right: 0;
+            overflow: hidden;
+            .foundation-course-A-slide-imgs {
+              background-size: cover;
+              display: flex;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              .slide-course {
+                flex: 0 0 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .courseA1 {
+                background: url("./foundation-image/factory-slide1.png")
+                  no-repeat center center;
+              }
+              .courseA2 {
+                background: url("./foundation-image/factory-slide2.png")
+                  no-repeat center center;
+              }
+              .courseA3 {
+                background: url("./foundation-image/factory-slide3.png")
+                  no-repeat center center;
+              }
+              .courseA4 {
+                background: url("./foundation-image/factory-slide4.png")
+                  no-repeat center center;
+              }
+              .courseA5 {
+                background: url("./foundation-image/factory-slide5.png")
+                  no-repeat center center;
+              }
+              .courseA6 {
+                background: url("./foundation-image/factory-slide6.png")
+                  no-repeat center center;
+              }
+            }
+            .foundation-course-A-slide-steps {
+              position: absolute;
+              top: 50%;
+              right: 1.3rem;
+              width: 100px;
+              aspect-ratio: 1 / 1;
+              transform: translateY(-50%);
+              z-index: 100;
+              display: flex;
+              overflow: hidden;
+              .slide-course-step {
+                aspect-ratio: 1 / 1;
+                flex: 0 0 100%;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .stepA1 {
+                background: url("./foundation-image/slide-step1.png") no-repeat
+                  center center;
+              }
+              .stepA2 {
+                background: url("./foundation-image/slide-step2.png") no-repeat
+                  center center;
+              }
+              .stepA3 {
+                background: url("./foundation-image/slide-step3.png") no-repeat
+                  center center;
+              }
+              .stepA4 {
+                background: url("./foundation-image/slide-step4.png") no-repeat
+                  center center;
+              }
+              .stepA5 {
+                background: url("./foundation-image/slide-step5.png") no-repeat
+                  center center;
+              }
+              .stepA6 {
+                background: url("./foundation-image/slide-step6.png") no-repeat
+                  center center;
+              }
+            }
+          }
+          .foundation-course-A-content {
+            width: 48.5rem;
+            width: 59%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            .foundation-course-divider-h01 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              background: #777777;
+              margin-bottom: 15px;
+              margin-bottom: 1rem;
+              margin-bottom: 2%;
+            }
+            .foundation-course-A-titles {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              .foundation-course-A-title {
+                font: 700 30px/30px "Amiri";
+                letter-spacing: -0.6px;
+                color: #111111;
+                margin: 0 25px;
+              }
+              .foundation-course-A-title2 {
+                font: 500 21px/24px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.42px;
+                color: #111111;
+                margin-right: 24px;
+              }
+              .foundation-course-A-title3 {
+                font: 400 21px/24px "sans-serif", sans-serif;
+                letter-spacing: -0.21px;
+                color: #d8a481;
+              }
+            }
+            .foundation-course-divider-h02 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #777777;
+              margin: 15px 0 12px 0;
+            }
+            .foundation-course-A-sub-a {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-a1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 60px 0 48px;
+              }
+              .foundation-course-divider-v01 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-A-sub-a2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h03 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 12px 0;
+            }
+            .foundation-course-A-sub-b {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-b1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 61px 0 41px;
+              }
+              .foundation-course-divider-v02 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-A-sub-b2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h04 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 20px 0;
+            }
+            .foundation-course-A-sub-c {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-c1 {
+                display: block;
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 200px 55px 0 48px;
+              }
+              .foundation-course-divider-img1 {
+                margin: 60px 50px 0 0;
+                .foundation-course-divider-img1-1024px {
+                  display: none;
+                }
+              }
+              .foundation-course-A-sub-d {
+                width: 55%;
+                .foundation-course-A-sub-d1 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d1-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d1-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d2 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d2-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d2-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                      word-break: keep-all;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d3 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d3-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d3-text {
+                    /* width: 257.375px; */
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                      word-break: keep-all;
+                    }
+                    p:nth-child(2) {
+                      /* width: 19rem; */
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d4 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d4-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d4-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d5 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d5-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d5-text {
+                    width: 257.375px;
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(3) {
+                      font: 400 14px/22px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #777;
+                      margin: 0 0 20px 8px;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d6 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-A-sub-d6-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-A-sub-d6-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .foundation-course-A-1024px {
+            display: none;
+          }
+        }
+        .foundation-course-B {
+          display: flex;
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 100px;
+          justify-content: center;
+          .foundation-course-B-slide {
+            display: flex;
+            position: relative;
+            align-items: center;
+            background-size: cover;
+            width: 37rem;
+            width: 38%;
+            height: 45.6rem;
+            border-radius: 20px;
+            border-radius: 3%;
+            margin-right: 0;
+            overflow: hidden;
+            .foundation-course-B-slide-imgs {
+              background-size: cover;
+              display: flex;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              .slide-courseB {
+                flex: 0 0 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .courseB1 {
+                background: url("./foundation-image/factory-slide1.png")
+                  no-repeat center center;
+              }
+              .courseB2 {
+                background: url("./foundation-image/factory-slide2.png")
+                  no-repeat center center;
+              }
+              .courseB3 {
+                background: url("./foundation-image/factory-slide4.png")
+                  no-repeat center center;
+              }
+              .courseB4 {
+                background: url("./foundation-image/factory-slide6.png")
+                  no-repeat center center;
+              }
+            }
+            .foundation-course-B-slide-steps {
+              position: absolute;
+              top: 50%;
+              right: 1.3rem;
+              width: 100px;
+              aspect-ratio: 1 / 1;
+              transform: translateY(-50%);
+              z-index: 100;
+              display: flex;
+              overflow: hidden;
+              .slide-course-stepB {
+                aspect-ratio: 1 / 1;
+                flex: 0 0 100%;
+                height: 100px;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+              }
+              .stepB1 {
+                background: url("./foundation-image/slide-step1.png") no-repeat
+                  center center;
+              }
+              .stepB2 {
+                background: url("./foundation-image/slide-step2.png") no-repeat
+                  center center;
+              }
+              .stepB3 {
+                background: url("./foundation-image/slide-step3.png") no-repeat
+                  center center;
+              }
+              .stepB4 {
+                background: url("./foundation-image/slide-step4.png") no-repeat
+                  center center;
+              }
+            }
+          }
+          .foundation-course-B-content {
+            width: 48.5rem;
+            width: 59%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            .foundation-course-divider-h01 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              background: #777777;
+              margin-bottom: 15px;
+              margin-bottom: 1rem;
+              margin-bottom: 2%;
+            }
+            .foundation-course-B-titles {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              .foundation-course-B-title {
+                font: 700 30px/30px "Amiri";
+                letter-spacing: -0.6px;
+                color: #111111;
+                margin: 0 25px;
+              }
+              .foundation-course-B-title2 {
+                font: 500 21px/24px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.42px;
+                color: #111111;
+                margin-right: 24px;
+              }
+              .foundation-course-B-title3 {
+                font: 400 21px/24px "sans-serif", sans-serif;
+                letter-spacing: -0.21px;
+                color: #d8a481;
+              }
+            }
+            .foundation-course-divider-h02 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #777777;
+              margin: 15px 0 12px 0;
+            }
+            .foundation-course-B-sub-a {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-B-sub-a1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 60px 0 48px;
+              }
+              .foundation-course-divider-v01 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-B-sub-a2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h03 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 12px 0;
+            }
+            .foundation-course-B-sub-b {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-B-sub-b1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 0 61px 0 41px;
+              }
+              .foundation-course-divider-v02 {
+                top: 0;
+                left: 0;
+                width: 1.5px;
+                height: 28.781px;
+                background: #333333;
+                margin-right: 60px;
+              }
+              .foundation-course-B-sub-b2 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h04 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #a6a6a6;
+              margin: 12px 0 20px 0;
+            }
+            .foundation-course-B-sub-c {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-B-sub-c1 {
+                font: 400 18px/28.8px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.36px;
+                color: #333333;
+                margin: 200px 55px 0 48px;
+              }
+              .foundation-course-divider-img1 {
+                margin: 60px 50px 0 0;
+                .foundation-course-divider-img1-1024px {
+                  display: none;
+                }
+              }
+              .foundation-course-B-sub-d {
+                width: 55%;
+                .foundation-course-B-sub-d1 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-B-sub-d1-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-B-sub-d1-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d2 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-B-sub-d2-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-B-sub-d2-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                      word-break: keep-all;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d3 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-B-sub-d3-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-B-sub-d3-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d4 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 12px;
+                  .foundation-course-B-sub-d4-img {
+                    margin-right: 10px;
+                  }
+                  .foundation-course-B-sub-d4-text {
+                    margin-left: 16.5px;
+                    p:nth-child(1) {
+                      font: 500 16px/26px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.32px;
+                      color: #111;
+                    }
+                    p:nth-child(2) {
+                      font: 400 14px/23px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .foundation-course-B-1024px {
+            display: none;
+          }
+        }
+      }
+    }
+    #foundation-caution {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      border-radius: 4px;
+      margin: 0 0 70px 0;
+      padding: 30px 45px;
+      max-width: 1420px;
+      width: 96%;
+      background-color: #fafafa;
+      .foundation-caution-title {
+        display: flex;
+        .foundation-caution-title-icon {
+          margin-right: 5px;
+        }
+        .foundation-caution-title-text {
+          font: 400 19px/30.4px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.38px;
+          color: #111;
+          margin-top: 4px;
+        }
+      }
+      .foundation-caution-divider {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1.5px;
+        background: #777;
+        margin: 12px 0;
+      }
+      .foundation-caution-sub {
+        .foundation-caution-sub-list {
+          padding-left: 15px;
+          .foundation-caution-sub1 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+          .foundation-caution-sub2 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+          .foundation-caution-sub3 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+          .foundation-caution-sub4 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+          .foundation-caution-sub5 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
           }
         }
       }
@@ -2607,7 +3418,7 @@ body {
   .foundation {
     width: 100%;
     height: auto;
-    position: relative;
+    position: static;
     justify-content: center;
     /* position: static; */
     top: 100px;
@@ -2617,14 +3428,6 @@ body {
         display: none;
       }
       .foundation-bg-1024 {
-        /*display: flex;*/
-        /*position: absolute;*/
-        /*width: 100%;*/
-        /*height: 400px;*/
-        /*vertical-align: baseline;*/
-        /*cursor: grab;*/
-        /*overflow: hidden;*/
-        /**/
         display: flex;
         position: relative;
         width: 100%;
@@ -2639,18 +3442,9 @@ body {
           transition: transform 0.5s ease;
         }
         .foundation-bg1 {
-          /*border: 10px solid #0f0;*/
           background: url("./foundation-image/1-1-slide1.jpeg") no-repeat center
             center;
-          /*background: url("./foundation-image/1-1-slide1.jpeg") no-repeat center center;*/
           background-size: cover;
-          /*position: absolute;*/
-          /*!* top: 100px; *!*/
-          /*left: 0;*/
-          /*!*width: 1003px;*!*/
-          /*!* width: 100%; *!*/
-          /*width: 995px;*/
-          /*height: 400px;*/
         }
         .foundation-bg2 {
           background: url("./foundation-image/1-1-slide2.jpeg") no-repeat center
@@ -2689,6 +3483,1101 @@ body {
     .foundation-nav {
       display: none;
       /* header 완성되면 변경하기 */
+    }
+  }
+  .foundation-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    #foundation-customized {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-size: contain;
+      width: 100%;
+      padding: 0;
+      .foundation-customized-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 20px;
+        margin-right: 0;
+        width: 100%;
+        .foundation-customized-text1 {
+          margin-right: 24px;
+          font: 500 24px/32px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.48px;
+          color: #111;
+        }
+        .foundation-customized-text2 {
+          margin-bottom: 10px;
+          font: 700 18px/25px "sofia";
+          letter-spacing: -0.36px;
+          color: #d8a481;
+        }
+        .foundation-customized-text3 {
+          width: 100%;
+          .foundation-customized-text3-1024px {
+            display: block;
+            font: 400 16px/24px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.32px;
+            color: #333333;
+          }
+          .foundation-customized-text3-1920px {
+            display: none;
+          }
+        }
+      }
+      .foundation-customized-right {
+        width: 100%;
+        padding-top: 13px;
+        padding-left: 20px;
+        align-content: flex-start;
+        display: block;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .foundation-customized-items {
+          .foundation-customized-item1,
+          .foundation-customized-item2,
+          .foundation-customized-item3,
+          .foundation-customized-item4 {
+            display: flex;
+            padding-bottom: 9px;
+            align-items: center;
+            .foundation-customized-icon {
+              height: 38px;
+              svg {
+                width: 38px;
+                height: 38px;
+                font: 400 14px/22.4px;
+                color: #777;
+                margin: 0 4.75px;
+              }
+            }
+            .foundation-customized-list {
+              .foundation-customized-title {
+                font: 500 16px/1 "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                vertical-align: baseline;
+              }
+              .foundation-customized-sub {
+                font: 400 16px/1 "Noto Sans KR", sans-serif;
+                letter-spacing: -0.28px;
+              }
+            }
+          }
+          .foundation-customized-item2,
+          .foundation-customized-item3 {
+            margin-top: 9px;
+            .foundation-customized-sub2 {
+              font: 400 14px/20px "Noto Sans KR", sans-serif;
+              letter-spacing: -0.02em;
+              vertical-align: baseline;
+              color: #777;
+              margin-left: 20px;
+            }
+          }
+          .foundation-customized-item4 {
+            padding-bottom: 0px;
+          }
+        }
+      }
+      .foundation-customized-png-max1024 {
+        display: none;
+      }
+    }
+    .foundation-course-gif-1024px {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 65px 0 43px 0;
+      padding: 0 35px;
+      width: 100%;
+      .foundation-course-gif-A {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+      .foundation-course-gif-B {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .foundation-course-gif-A1,
+      .foundation-course-gif-A2,
+      .foundation-course-gif-B1,
+      .foundation-course-gif-B2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        img {
+          width: calc((100% - 15px) / 4);
+          object-fit: contain;
+          border-radius: 20px;
+          min-width: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+        p {
+          margin: 0;
+          margin-top: 4px;
+          color: #111;
+          font: 400 13px/19px "Noto Sans KR", sans-serif;
+        }
+      }
+    }
+    .foundation-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .foundation-banner-pc {
+        background: url("./foundation-image/img-foundation-banner-pc.jpg")
+          center no-repeat;
+        width: 100%;
+        width: 88rem;
+        aspect-ratio: 16 / 6.4;
+        display: flex;
+        position: relative;
+        background-size: cover;
+        .foundation-banner-slogan {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 750px;
+          width: 600px;
+          align-content: flex-start;
+          li {
+            font: 500 36px/44px "Subway";
+            letter-spacing: -0.02em;
+            color: #fff;
+            display: none;
+          }
+        }
+      }
+    }
+    .foundation-course {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%;
+      width: 100%;
+      .foundation-course-texts {
+        padding: 24px 16px 16px 21px;
+        display: block;
+        .foundation-course-text1 {
+          font: 500 24px/35px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.48px;
+          color: #111;
+        }
+        .foundation-course-text2 {
+          font: 700 18px/20px "sofia";
+          letter-spacing: -0.36px;
+          color: #d8a481;
+        }
+      }
+      .foundation-course-type {
+        width: 100%;
+        .foundation-course-A {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 7rem;
+          .foundation-course-A-slide {
+            display: none;
+          }
+          .foundation-course-A-content {
+            width: 48.5rem;
+            width: 98%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            .foundation-course-divider-h01 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              background: #777777;
+              margin-bottom: 11px;
+            }
+            .foundation-course-A-titles {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              .foundation-course-A-title {
+                font: 700 26px/27px "Amiri";
+                letter-spacing: -0.6px;
+                color: #111111;
+                margin: 0 14px 0 20px;
+              }
+              .foundation-course-A-title2 {
+                font: 500 19px/24px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.42px;
+                color: #111111;
+                margin-right: 24px;
+              }
+              .foundation-course-A-title3 {
+                display: none;
+              }
+            }
+            .foundation-course-divider-h02 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #777777;
+              margin: 10px 0 10px 0;
+            }
+            .foundation-course-A-sub-a {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-a1 {
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+                margin: 0 40px 0 36px;
+                word-spacing: 3px;
+              }
+              .foundation-course-divider-v01 {
+                top: 0;
+                left: 0;
+                width: 0.75px;
+                height: 28.793px;
+                background: #333333;
+                margin-right: 40px;
+              }
+              .foundation-course-A-sub-a2 {
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h03 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: #a6a6a6;
+              margin: 10px 0 10px 0;
+            }
+            .foundation-course-A-sub-b {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-A-sub-b1 {
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+                margin: 0 40px 0 36px;
+                word-spacing: 3px;
+              }
+              .foundation-course-divider-v02 {
+                top: 0;
+                left: 0;
+                width: 0.75px;
+                height: 28.793px;
+                background: #333333;
+                margin-right: 40px;
+              }
+              .foundation-course-A-sub-b2 {
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h04 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: #a6a6a6;
+              margin: 10px 0 10px 0;
+            }
+            .foundation-course-A-sub-c {
+              width: 100%;
+              height: auto;
+              display: flex;
+              margin-bottom: 40px;
+              .foundation-course-A-sub-c1 {
+                display: block;
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+                margin: 0 40px 0 36px;
+                word-spacing: 3px;
+              }
+              .foundation-course-divider-img1 {
+                margin: 6px 0 0 0;
+                .foundation-course-divider-img1-1920px {
+                  display: none;
+                }
+                .foundation-course-divider-img1-1024px {
+                  display: flex;
+                }
+              }
+              .foundation-course-A-sub-d {
+                width: auto;
+                margin-left: 34px;
+                .foundation-course-A-sub-d1 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-A-sub-d1-img {
+                    display: none;
+                  }
+                  .foundation-course-A-sub-d1-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d2 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-A-sub-d2-img {
+                    display: none;
+                  }
+                  .foundation-course-A-sub-d2-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d3 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-A-sub-d3-img {
+                    display: none;
+                  }
+                  .foundation-course-A-sub-d3-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d4 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-A-sub-d4-img {
+                    display: none;
+                  }
+                  .foundation-course-A-sub-d4-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d5 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-A-sub-d5-img {
+                    display: none;
+                  }
+                  .foundation-course-A-sub-d5-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                    p:nth-child(3) {
+                      display: none;
+                    }
+                  }
+                }
+                .foundation-course-A-sub-d6 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 0x;
+                  width: auto;
+                  .foundation-course-A-sub-d6-img {
+                    display: none;
+                  }
+                  .foundation-course-A-sub-d6-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .foundation-course-A-1024px {
+            display: flex;
+            padding-bottom: 40px;
+            margin: 0 20px;
+            width: calc(270px * 6 + 25px);
+            .A1024-1,
+            .A1024-2,
+            .A1024-3,
+            .A1024-4,
+            .A1024-5,
+            .A1024-6 {
+              position: relative;
+              width: 270px;
+              margin-right: 5px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                width: 270px;
+                object-fit: cover;
+                border-radius: 4px;
+              }
+              .A1024-texts {
+                margin-top: 15px;
+                padding: 0 15px;
+                p:nth-child(1) {
+                  margin-bottom: 3px;
+                  font: 700 18px/26px "Noto Sans KR", sans-serif;
+                  letter-spacing: -0.36px;
+                  color: #111;
+                }
+                p:nth-child(2) {
+                  margin-bottom: 3px;
+                  font: 400 14px/20px "Noto Sans KR", sans-serif;
+                  letter-spacing: -0.28px;
+                  color: #333;
+                }
+              }
+            }
+            .A1024-1::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step1.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+            .A1024-2::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step2.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+            .A1024-3::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step3.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+            .A1024-4::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step4.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+            .A1024-5::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step5.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+            .A1024-6::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step6.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+          }
+        }
+        .foundation-course-B {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          max-width: 100%;
+          width: 100%;
+          margin: 0;
+          padding: 0 0 40px 0;
+          .foundation-course-B-slide {
+            display: none;
+          }
+          .foundation-course-B-content {
+            width: 48.5rem;
+            width: 98%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            .foundation-course-divider-h01 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              background: #777777;
+              margin-bottom: 11px;
+            }
+            .foundation-course-B-titles {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              .foundation-course-B-title {
+                font: 700 26px/27px "Amiri";
+                letter-spacing: -0.6px;
+                color: #111111;
+                margin: 0 14px 0 20px;
+              }
+              .foundation-course-B-title2 {
+                font: 500 19px/24px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.42px;
+                color: #111111;
+                margin-right: 24px;
+              }
+              .foundation-course-B-title3 {
+                display: none;
+              }
+            }
+            .foundation-course-divider-h02 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1.5px;
+              background: #777777;
+              margin: 10px 0 10px 0;
+            }
+            .foundation-course-B-sub-a {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-B-sub-a1 {
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+                margin: 0 40px 0 36px;
+                word-spacing: 3px;
+              }
+              .foundation-course-divider-v01 {
+                top: 0;
+                left: 0;
+                width: 0.75px;
+                height: 28.793px;
+                background: #333333;
+                margin-right: 40px;
+              }
+              .foundation-course-B-sub-a2 {
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h03 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: #a6a6a6;
+              margin: 10px 0 10px 0;
+            }
+            .foundation-course-B-sub-b {
+              width: 100%;
+              height: auto;
+              display: flex;
+              .foundation-course-B-sub-b1 {
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+                margin: 0 40px 0 36px;
+                word-spacing: 3px;
+              }
+              .foundation-course-divider-v02 {
+                top: 0;
+                left: 0;
+                width: 0.75px;
+                height: 28.793px;
+                background: #333333;
+                margin-right: 40px;
+              }
+              .foundation-course-B-sub-b2 {
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+              }
+            }
+            .foundation-course-divider-h04 {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: #a6a6a6;
+              margin: 10px 0 10px 0;
+            }
+            .foundation-course-B-sub-c {
+              width: 100%;
+              height: auto;
+              display: flex;
+              margin-bottom: 40px;
+              .foundation-course-B-sub-c1 {
+                display: block;
+                font: 400 16px/25.6px "Noto Sans KR", sans-serif;
+                letter-spacing: -0.32px;
+                color: #333333;
+                margin: 0 40px 0 36px;
+                word-spacing: 3px;
+              }
+              .foundation-course-divider-img1 {
+                margin: 6px 0 0 0;
+                .foundation-course-divider-img1-1920px {
+                  display: none;
+                }
+                .foundation-course-divider-img1-1024px {
+                  display: flex;
+                }
+              }
+              .foundation-course-B-sub-d {
+                width: auto;
+                margin-left: 34px;
+                .foundation-course-B-sub-d1 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-B-sub-d1-img {
+                    display: none;
+                  }
+                  .foundation-course-B-sub-d1-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d2 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-B-sub-d2-img {
+                    display: none;
+                  }
+                  .foundation-course-B-sub-d2-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d3 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-B-sub-d3-img {
+                    display: none;
+                  }
+                  .foundation-course-B-sub-d3-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+                .foundation-course-B-sub-d4 {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 11px;
+                  width: auto;
+                  .foundation-course-B-sub-d4-img {
+                    display: none;
+                  }
+                  .foundation-course-B-sub-d4-text {
+                    margin-left: 0;
+                    p:nth-child(1) {
+                      font: 400 14px/22.4px "Noto Sans KR", sans-serif;
+                      letter-spacing: -0.28px;
+                      color: #333;
+                    }
+                    p:nth-child(2) {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .foundation-course-B-1024px {
+            display: flex;
+            padding-bottom: 40px;
+            margin: 0 20px;
+            width: calc(270px * 6 + 25px);
+            .B1024-1,
+            .B1024-2,
+            .B1024-3,
+            .B1024-4 {
+              position: relative;
+              width: 270px;
+              margin-right: 5px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                width: 270px;
+                object-fit: cover;
+                border-radius: 4px;
+              }
+              .B1024-texts {
+                margin-top: 15px;
+                padding: 0 15px;
+                p:nth-child(1) {
+                  margin-bottom: 3px;
+                  font: 700 18px/26px "Noto Sans KR", sans-serif;
+                  letter-spacing: -0.36px;
+                  color: #111;
+                }
+                p:nth-child(2) {
+                  margin-bottom: 3px;
+                  font: 400 14px/20px "Noto Sans KR", sans-serif;
+                  letter-spacing: -0.28px;
+                  color: #333;
+                }
+              }
+            }
+            .B1024-1::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step1.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+            .B1024-2::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step2.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+            .B1024-3::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step3.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+            .B1024-4::before {
+              content: "";
+              position: absolute;
+              background: url("./foundation-image/slide-step4.png") center /
+                contain no-repeat;
+              z-index: 10;
+              top: 268px;
+              left: 1px;
+              width: 64px;
+              height: 60px;
+            }
+          }
+        }
+      }
+    }
+    .foundation-reservation {
+      display: none;
+    }
+    .foundation-6steps {
+      margin: 0 0 0 0;
+      max-width: 1024px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .foundation-6step-texts {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        /* width: 1420px; */
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+        .foundation-6step-text1 {
+          padding: 24px 20px 0 20px;
+          text-align: left;
+          width: 100%;
+          font: 500 24px/38.4px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.48px;
+          color: #111;
+        }
+        .foundation-6step-text2 {
+          padding: 0 20px 8px 20px;
+          text-align: left;
+          width: 100%;
+          font: 700 18px/20px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.36px;
+          color: #d8a481;
+        }
+        .foundation-6step-text3 {
+          text-align: right;
+          width: 100%;
+          color: #333;
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 5px;
+          padding: 0 24px 0 20px;
+        }
+      }
+      .foundation-6step-imgs {
+        display: none;
+      }
+      .foundation-6step-imgs-1024px {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px 20px 70px 20px;
+        padding: 0px 0px 0px 0px;
+        .step-imgs-1024px-A,
+        .step-imgs-1024px-B,
+        .step-imgs-1024px-C {
+          display: flex;
+          flex-direction: row;
+          width: calc(100% - 40px);
+        }
+        .step-imgs-1024px-1,
+        .step-imgs-1024px-3,
+        .step-imgs-1024px-5 {
+          width: 50%;
+          aspect-ratio: 1 / 1;
+          margin-right: 2.5px;
+          margin-bottom: 2.5px;
+        }
+        .step-imgs-1024px-2,
+        .step-imgs-1024px-4,
+        .step-imgs-1024px-6 {
+          width: 50%;
+          aspect-ratio: 1 / 1;
+          margin-bottom: 2.5px;
+        }
+        .step-imgs-1024px-1 {
+          background: url("./foundation-image/1-6.jpg") center center / cover
+            no-repeat;
+        }
+        .step-imgs-1024px-2 {
+          background: url("./foundation-image/1-7.jpg") center center / cover
+            no-repeat;
+        }
+        .step-imgs-1024px-3 {
+          background: url("./foundation-image/1-8.jpg") center center / cover
+            no-repeat;
+        }
+        .step-imgs-1024px-4 {
+          background: url("./foundation-image/1-9.jpg") center center / cover
+            no-repeat;
+        }
+        .step-imgs-1024px-5 {
+          background: url("./foundation-image/1-10.jpg") center center / cover
+            no-repeat;
+        }
+        .step-imgs-1024px-6 {
+          background: url("./foundation-image/1-11.jpg") center center / cover
+            no-repeat;
+        }
+      }
+    }
+    #foundation-caution {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      border-radius: 4px;
+      margin: 0 20px 40px 20px;
+      padding: 15px 10px 20px 10px;
+      max-width: 1024px;
+      width: 100%;
+      background-color: #fafafa;
+      .foundation-caution-title {
+        display: flex;
+        .foundation-caution-title-icon {
+          margin-right: 5px;
+        }
+        .foundation-caution-title-text {
+          font: 400 19px/30.4px "Noto Sans KR", sans-serif;
+          letter-spacing: -0.38px;
+          color: #111;
+          margin-top: 4px;
+        }
+      }
+      .foundation-caution-divider {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #777;
+        margin: 12px 12px;
+      }
+      .foundation-caution-sub {
+        .foundation-caution-sub-list {
+          padding-left: 15px;
+          .foundation-caution-sub1 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+          .foundation-caution-sub2 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+          .foundation-caution-sub3 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+          .foundation-caution-sub4 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+          .foundation-caution-sub5 {
+            font: 400 14px/20px "Noto Sans KR", sans-serif;
+            letter-spacing: -0.28px;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            &::before {
+              content: "·";
+              position: absolute;
+              left: -15px;
+            }
+          }
+        }
+      }
     }
   }
 }

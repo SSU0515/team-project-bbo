@@ -217,18 +217,18 @@ window.addEventListener("scroll", () => {
 let currentIndex = 0;
 
 function switchSlide() {
-  const slides = document.querySelectorAll('.slide');
+  const slides = document.querySelectorAll(".slide");
   currentIndex = (currentIndex + 1) % slides.length;
 
-  slides.forEach((slide, index) => {
+  slides.forEach((slide) => {
     slide.style.transform = `translateX(-${currentIndex * 100}%)`;
   });
 
-  const slideBar = document.querySelector('.slide-bar');
+  const slideBar = document.querySelector(".slide-bar");
   if (currentIndex === 0) {
-    slideBar.style.transform = 'translateX(0)';
+    slideBar.style.transform = "translateX(0)";
   } else {
-    slideBar.style.transform = 'translateX(100%)';
+    slideBar.style.transform = "translateX(100%)";
   }
 }
 
@@ -238,32 +238,32 @@ setInterval(switchSlide, 3000);
 //
 //
 //  << foundation-nav-tabs - 마우스 스크롤시 헤더 밑에 fix >>
-document.addEventListener('DOMContentLoaded', function() {
-  const navTabs = document.querySelector('.foundation-nav-tabs');
+document.addEventListener("DOMContentLoaded", function () {
+  const navTabs = document.querySelector(".foundation-nav-tabs");
   const navTabsOffsetTop = navTabs.offsetTop;
-  const header = document.querySelector('.common-header');
+  const header = document.querySelector(".common-header");
 
   function checkScroll() {
     if (window.scrollY >= navTabsOffsetTop - header.offsetHeight) {
-      navTabs.classList.add('fixed-nav-tabs');
+      navTabs.classList.add("fixed-nav-tabs");
     } else {
-      navTabs.classList.remove('fixed-nav-tabs');
+      navTabs.classList.remove("fixed-nav-tabs");
     }
-    
-    const isFixed = navTabs.classList.contains('fixed-nav-tabs');
+
+    const isFixed = navTabs.classList.contains("fixed-nav-tabs");
     if (isFixed) {
-      navTabs.classList.add('nav-tabs-fixed-style');
+      navTabs.classList.add("nav-tabs-fixed-style");
     } else {
-      navTabs.classList.remove('nav-tabs-fixed-style');
+      navTabs.classList.remove("nav-tabs-fixed-style");
     }
   }
 
-  window.addEventListener('scroll', checkScroll);
+  window.addEventListener("scroll", checkScroll);
 });
-// 
-// 
-// 
-// 
+//
+//
+//
+//
 //  << foundation-banner-list - 배너에 글자들 >>
 const sloganList = document.getElementById("foundation-banner-list");
 const slogans = sloganList.getElementsByTagName("li");
@@ -275,68 +275,69 @@ function showNextSlogan() {
   slogans[bannerList].style.display = "list-item";
 }
 
-setInterval(showNextSlogan, 200); 
-// 
-// 
-// 
-// 
+setInterval(showNextSlogan, 200);
+//
+//
+//
+//
 //  < foundation-course-A - 이미지 슬라이드 slide >
 let fcCurrentIndex = 0;
 
 function switchFcSlide() {
-  const FcSlides = document.querySelectorAll('.slide-course');
+  const FcSlides = document.querySelectorAll(".slide-course");
   fcCurrentIndex = (fcCurrentIndex + 1) % FcSlides.length;
 
-  FcSlides.forEach((slide, index) => {
+  FcSlides.forEach((slide) => {
     slide.style.transform = `translateX(-${fcCurrentIndex * 100}%)`;
   });
 }
 setInterval(switchFcSlide, 3000);
-// 
-// 
-// 
-// 
-//  < foundation-course-A-steps - 스텝 슬라이드 slide >
-let fcStepCurrentIndex = 0;
+//
+//
+//
+//
+//  << foundation-course-A-steps - 스텝 슬라이드 slide >>
+const sloganStepA = document.getElementById("Aslide-steps");
+const slogansA = sloganStepA.getElementsByTagName("div");
+let bannerListA = 0;
 
-function switchFcStepSlide() {
-  const FcStepSlides = document.querySelectorAll('.slide-course-step');
-  fcStepCurrentIndex = (fcStepCurrentIndex + 1) % FcStepSlides.length;
-
-  FcStepSlides.forEach((slide, index) => {
-    slide.style.transform = `translateX(-${fcStepCurrentIndex * 100}%)`;
-  });
+function showNextSloganA() {
+  slogansA[bannerListA].style.display = "none";
+  bannerListA = (bannerListA + 1) % slogansA.length;
+  slogansA[bannerListA].style.display = "list-item";
 }
-setInterval(switchFcStepSlide, 3000);
-// 
-// 
-// 
-// 
+
+setInterval(showNextSloganA, 3000);
+//
+//
+//
+//
 //  < foundation-course-B - 슬라이드 slide >
 let fcCurrentIndexB = 0;
 
 function switchFcSlideB() {
-  const FcSlidesB = document.querySelectorAll('.slide-courseB');
+  const FcSlidesB = document.querySelectorAll(".slide-courseB");
   fcCurrentIndexB = (fcCurrentIndexB + 1) % FcSlidesB.length;
 
-  FcSlidesB.forEach((slide, index) => {
+  FcSlidesB.forEach((slide) => {
     slide.style.transform = `translateX(-${fcCurrentIndexB * 100}%)`;
   });
 }
 setInterval(switchFcSlideB, 3000);
-// 
-// 
-// 
-// 
-//  < foundation-course-B-steps - 스텝 슬라이드 slide >
-let fcStepCurrentIndexB = 0;
+//
+//
+//
+//
 
-function switchFcStepSlideB() {
-  const FcStepSlidesB = document.querySelectorAll('.slide-course-stepB');
-  fcStepCurrentIndexB = (fcStepCurrentIndexB + 1) % FcStepSlidesB.length;
+//  << foundation-course-B-steps - 스텝 슬라이드 slide >>
+const sloganStepB = document.getElementById("Bslide-steps");
+const slogansB = sloganStepB.getElementsByTagName("div");
+let bannerListB = 0;
 
-  FcStepSlidesB.forEach((slide, index) => {
-    slide.style.transform = `translateX(-${fcStepCurrentIndexB * 100}%)`;
-  });
+function showNextSloganB() {
+  slogansB[bannerListB].style.display = "none";
+  bannerListB = (bannerListB + 1) % slogansB.length;
+  slogansB[bannerListB].style.display = "list-item";
 }
-setInterval(switchFcStepSlideB, 3000);
+
+setInterval(showNextSloganB, 3000);
