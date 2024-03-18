@@ -9,42 +9,49 @@
 
 /* section 01 */
 .section01 {
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  height: 100vh;
   /* background: rgb(245, 226, 226); */
   background: linear-gradient(#f5e2e2, #f2c6cf);
   display: flex;
-  overflow: hidden;
+  align-items: center;
 }
 .section01 .section01-img {
-  width: 1344px;
-  height: 1080px;
+  width: 70%;
+  height: 100vh;
   background: url(./img/about_etude3_img1.jpg) center/cover no-repeat;
 }
 .section01 .section01-img .section01-title {
   display: none;
 }
 .section01 .section01-sub {
-  position: relative;
+  width: 30%;
+  height: 100vh;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.section01 .section01-sub img {
-  position: absolute;
-  /* left: 0; */
-  top: 50%;
-  left: 600px;
-  transform: translateY(-50%);
-  transition: all 1.5s cubic-bezier(0, 0, 0, 1);
+
+.section01 .section01-sub .seiction01-subimg {
+  width: 90%;
+  height: 70%;
+  /* width: 100vh;
+  height: 100%; */
+  background: url(./img/about_etude_title2023.png) center/contain no-repeat;
+  /* background-size: contain; */
 }
 
 .section01-logo-img {
+  width: 100%;
   left: 0;
 }
 
 /* section02 */
 
 .section02 {
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 .section02 .section02-img {
@@ -92,29 +99,34 @@
 /* section03 */
 
 .section03 {
-  width: 1920px;
-  height: 1353px;
+  width: 100%;
+  height: 84.5rem; /*1350px*/
   background: linear-gradient(#f5e2e2 60%, #f2c6cf);
   overflow: hidden;
 }
 .section03 .section03-box {
   display: flex;
-  width: 1420px;
+  width: 73.95%; /* 1420px  */
   height: 100%;
   margin: 0 auto;
+  border: 1px solid #000;
 }
 .section03-box .section03-box-left,
 .section03-box-right {
-  width: 710px;
+  border: 1px solid #000;
+  width: 50%; /* 710px */
   height: 100%;
   box-sizing: content-box;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.section03-box .section03-box-left > img {
-  width: 578px;
-  height: 651px;
-  margin: 351px 0px 351px 124px;
+.section03-box .section03-left-img {
+  border: 1px solid #000;
+  width: 81%; /*578px*/
+  /*max-width*/
+  height: 48%; /*651px*/
+  background: url(./img/about_etude2023_img3.jpg) center/contain no-repeat;
+  /* margin: 351px 0px 351px 124px; */
 }
 .section03-box-right .section03-imgpackage {
   width: 702px;
@@ -449,11 +461,11 @@
 
   .section01 {
     width: 1024px;
-    height: 1820px;
+    height: 100vh;
   }
   .section01 .section01-img {
     width: 665px;
-    height: 1820px;
+    height: 100vh;
     background: url(./img/about_etude3_img1.jpg) center/cover no-repeat;
   }
   .section01 .section01-sub img {
@@ -462,7 +474,7 @@
 
   .section02 {
     width: 1024px;
-    height: 1820px;
+    height: 100vh;
   }
   .section02 .section02-img {
     width: 100%;
