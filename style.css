@@ -109,52 +109,58 @@
   width: 73.95%; /* 1420px  */
   height: 100%;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 .section03-box .section03-box-left,
 .section03-box-right {
-  border: 1px solid #000;
   width: 50%; /* 710px */
   height: 100%;
   box-sizing: content-box;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  position: relative;
 }
+
 .section03-box .section03-left-img {
-  border: 1px solid #000;
-  width: 81%; /*578px*/
+  width: 100%; /*578px*/
   /*max-width*/
   height: 48%; /*651px*/
   background: url(./img/about_etude2023_img3.jpg) center/contain no-repeat;
-  /* margin: 351px 0px 351px 124px; */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  background-position: right;
 }
+
 .section03-box-right .section03-imgpackage {
-  width: 702px;
-  height: 743px;
-  margin-top: 127px;
+  width: 100%;
+  height: 50%;
+  margin-top: 8rem;
   position: relative;
+  margin-bottom: 5.75rem;
 }
-.section03-box-right .section03-imgpackage img {
-  width: 578px;
-  height: 651px;
+.section03-box-right .section03-imgpackage .section03-right-img {
+  background: url(./img/about_etude2023_img2.jpg) center/contain no-repeat;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  background-position: left;
 }
 .section03-text01 {
-  font-size: 45px;
-  padding-bottom: 40px;
+  font-size: 2.813rem;
   font-family: Inter;
   font-weight: 600;
 }
 .section03-text02 {
   font-family: Noto Sans KR;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 .section03-text02 p {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 .section03-box-right .section03-gif img {
   width: 118px;
@@ -164,7 +170,7 @@
 /* section04 */
 
 .section04 {
-  width: 1920px;
+  width: 100%;
   height: 790px;
   background: linear-gradient(#f2c6cf, #fff);
   position: relative;
@@ -448,6 +454,47 @@
   display: flex;
   justify-content: center;
   margin-top: 135px;
+}
+
+@media (max-width: 1380px) {
+  .section03-box-right .section03-imgpackage {
+    width: 100%;
+    height: 50%;
+    margin-top: 8rem;
+    position: relative;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 1240px) {
+  .section03-box-right .section03-imgpackage {
+    width: 100%;
+    height: 50%;
+    margin-top: 8rem;
+    position: relative;
+    margin-bottom: 0rem;
+  }
+  .section03-box-right .section03-imgpackage .section03-right-img {
+    background: url(./img/about_etude2023_img2.jpg) center/contain no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: left;
+  }
+  .section03-text01 {
+    font-size: 2.1rem;
+    padding-bottom: 1.25rem;
+    font-weight: bold;
+  }
+  .section03-text02 {
+    font-size: 0.875rem;
+    font-weight: lighter;
+  }
+  .section03-text02 p {
+    padding-bottom: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
