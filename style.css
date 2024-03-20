@@ -173,20 +173,20 @@
   width: 100%;
   height: 790px;
   background: linear-gradient(#f2c6cf, #fff);
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section04-img {
-  width: 1420px;
-  height: 500px;
-  background: url(./img/about_etude_logo2023.jpg);
-  position: absolute;
-  top: 110px;
-  left: 250px;
+  width: 88.75rem;
+  height: 31.25rem;
+  background: url(./img/about_etude_logo2023.jpg) center/cover no-repeat;
+  margin-bottom: 8.125rem;
 }
 
 /* section05 */
 .section05 {
-  width: 1920px;
+  width: 100%;
   height: 790px;
   display: flex;
   justify-content: center;
@@ -195,7 +195,7 @@
 }
 
 .section05-bgbox {
-  width: 1536px;
+  width: 80%; /* 1536px */
   height: 720px;
   background: url(./img/Section05.png) center/cover no-repeat;
   position: relative;
@@ -209,8 +209,8 @@
 
 .section05-text {
   position: absolute;
-  top: 88px;
-  left: 250px;
+  top: 12%;
+  left: 16%;
 }
 .section05-text01 {
   font-size: 45px;
@@ -226,7 +226,7 @@
 /* section06 */
 
 .section06 {
-  width: 1920px;
+  width: 100%;
   height: 4435px;
   background: linear-gradient(#f2c6cf, #ecf3e1);
   position: relative;
@@ -234,15 +234,16 @@
 
 .section06 .section06-text {
   position: absolute;
-  top: 176px;
-  left: 250px;
+  top: 3.9%;
+  left: 19%;
+  /* left: 250px; */
   font-family: Noto Sans KR;
   font-size: 18px;
   font-weight: 500;
 }
 
 .section06 .section06-text p:first-child {
-  font-size: 35px;
+  font-size: 31px;
   font-family: Inter;
   font-weight: bold;
   margin-bottom: 14px;
@@ -321,44 +322,50 @@
 
 .card01 {
   position: absolute;
-  top: 404px;
-  left: 374px;
+  /* top: 404px; */
+  top: 11%;
+  left: 19.4%;
+  /* left: 374px; */
   transform: translateY(20%);
-  opacity: 0;
+  /* opacity: 0; */
 }
 .card02 {
   position: absolute;
-  top: 552px;
-  left: 772px;
+  /* top: 552px; */
+  top: 40%;
+  /* left: 772px; */
+
   transform: translateY(20%);
-  opacity: 0;
+  /* opacity: 0; */
 }
 .card03 {
   position: absolute;
-  top: 454px;
-  left: 1170px;
-  opacity: 0;
+  /* top: 454px; */
+  top: 11%;
+  /* left: 1170px; */
+  left: 60%;
+  /* opacity: 0; */
   transform: translateY(20%);
 }
 .card04 {
   position: absolute;
   top: 1214px;
   left: 374px;
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(20%);
 }
 .card05 {
   position: absolute;
   top: 1362px;
   left: 772px;
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(20%);
 }
 .card06 {
   position: absolute;
   top: 1264px;
   left: 1170px;
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(20%);
 }
 
@@ -414,7 +421,7 @@
 /* section07 */
 
 .section07 {
-  width: 1920px;
+  width: 100%;
   height: 1371px;
   display: flex;
   flex-direction: column;
@@ -463,6 +470,28 @@
     margin-top: 8rem;
     position: relative;
     margin-bottom: 0rem;
+  }
+  .section04-img {
+    width: 74%;
+    height: 63%;
+    background: url(./img/about_etude_logo2023.jpg) center/contain no-repeat;
+    margin-bottom: 8.125rem;
+  }
+  .section05-bgbox {
+    width: 80%;
+    height: 720px;
+    background: url(./img/Section05.png) center/cover no-repeat;
+    position: relative;
+    transition: all 0.5s;
+  }
+  .section06 .section06-text {
+    position: absolute;
+    top: 2.9%;
+    left: 2%;
+    /* left: 250px; */
+    font-family: Noto Sans KR;
+    font-size: 18px;
+    font-weight: 500;
   }
 }
 

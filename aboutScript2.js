@@ -85,9 +85,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//section 06 card event
+// section 06 card event
 const section06TopImg = document.querySelectorAll(".cardTop");
 const section06BottomImg = document.querySelectorAll(".cardBottom");
+
+console.log(section06TopImg);
 
 window.addEventListener("scroll", () => {
   if (innerWidth > 1024) {
@@ -124,8 +126,6 @@ window.addEventListener("scroll", () => {
 const event06_1 = document.querySelector(".section06Simg01");
 const event06_2 = document.querySelector(".section06Simg02");
 
-console.log(event06_1);
-
 window.addEventListener("scroll", () => {
   if (scrollY > 6800) {
     event06_1.classList.add("imgWrap02Event");
@@ -141,3 +141,5 @@ window.addEventListener("scroll", () => {
     event06_2.classList.remove("imgWrap02Event");
   }
 });
+
+console.log();
