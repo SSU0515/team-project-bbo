@@ -230,6 +230,14 @@
   height: 4435px;
   background: linear-gradient(#f2c6cf, #ecf3e1);
   position: relative;
+  padding-top: 404px;
+}
+.img-wrap {
+  width: 100%;
+  height: 675px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .section06 .section06-text {
@@ -262,8 +270,8 @@
 }
 
 .img_card img {
-  width: 375px;
-  height: 478px;
+  width: 23.438rem;
+  height: 30rem;
 }
 
 .goods-imformation {
@@ -321,52 +329,28 @@
 }
 
 .card01 {
-  position: absolute;
-  /* top: 404px; */
-  top: 11%;
-  left: 19.4%;
-  /* left: 374px; */
-  transform: translateY(20%);
+  transform: translateY(0%);
   /* opacity: 0; */
 }
 .card02 {
-  position: absolute;
-  /* top: 552px; */
-  top: 40%;
-  /* left: 772px; */
-
   transform: translateY(20%);
   /* opacity: 0; */
 }
 .card03 {
-  position: absolute;
-  /* top: 454px; */
-  top: 11%;
-  /* left: 1170px; */
-  left: 60%;
   /* opacity: 0; */
-  transform: translateY(20%);
+  transform: translateY(5%);
 }
 .card04 {
-  position: absolute;
-  top: 1214px;
-  left: 374px;
   /* opacity: 0; */
   transform: translateY(20%);
 }
 .card05 {
-  position: absolute;
-  top: 1362px;
-  left: 772px;
   /* opacity: 0; */
-  transform: translateY(20%);
+  transform: translateY(40%);
 }
 .card06 {
-  position: absolute;
-  top: 1264px;
-  left: 1170px;
   /* opacity: 0; */
-  transform: translateY(20%);
+  transform: translateY(25%);
 }
 
 .card0103 {
@@ -382,22 +366,25 @@
 }
 
 .img-wrap02 {
-  position: absolute;
-  top: 2270px;
-  left: 250px;
+  margin-top: 500px;
+  width: 70%;
   display: flex;
+  margin: 100px auto;
+  margin-top: 500px;
 }
 
 .section06Simg01 {
+  width: 50%;
   transition: all 1s;
-  opacity: 0;
-  transform: scale(0.1);
+  opacity: 1;
+  transform: scale(1);
 }
 
 .section06Simg02 {
+  width: 50%;
   transition: all 1s;
-  opacity: 0;
-  transform: scale(0.1);
+  opacity: 1;
+  transform: scale(1);
 }
 
 .imgWrap02Event {
@@ -413,9 +400,8 @@
 } */
 
 .img-wrap03 {
-  position: absolute;
-  left: 515.5px;
-  top: 3110px;
+  display: flex;
+  justify-content: center;
 }
 
 /* section07 */
@@ -430,11 +416,15 @@
 
 .section07-top {
   display: flex;
-  width: inherit;
+  width: 100%;
   height: 710px;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+}
+
+.section07-top-right {
+  background: url(./img/Section07.png) center/cover no-repeat;
 }
 
 .section07-top-left,
@@ -480,7 +470,7 @@
   .section05-bgbox {
     width: 80%;
     height: 720px;
-    background: url(./img/Section05.png) center/cover no-repeat;
+    background: url(./img/Section05.png) center no-repeat;
     position: relative;
     transition: all 0.5s;
   }
@@ -492,6 +482,20 @@
     font-family: Noto Sans KR;
     font-size: 18px;
     font-weight: 500;
+  }
+  .section07-top {
+    display: flex;
+    width: 100%;
+    height: 51.7%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .section07-top-left,
+  .section07-top-right {
+    height: 100%;
+    width: 50%;
   }
 }
 
@@ -523,6 +527,9 @@
   }
   .section03-text02 p {
     padding-bottom: 1.25rem;
+  }
+  .section06 {
+    overflow: hidden;
   }
 }
 
@@ -661,11 +668,16 @@
     font-size: 18px;
     font-weight: lighter;
   }
+
+  /* secition06 */
+
   .section06 {
     width: 1024px;
     height: 2862.13px;
     background: linear-gradient(#f2c6cf, #f3e1e1);
     position: static;
+    overflow: hidden;
+    padding-top: 0;
   }
 
   .section06 .section06-text {
@@ -684,10 +696,14 @@
 
   /* card img */
 
+  .img-wraps {
+    display: flex;
+    gap: 12px;
+  }
+
   .img-wrap {
-    width: 1000px;
-    height: 675px;
-    overflow: hidden;
+    /* width: 1000px; */
+    /* height: 675px; */
     margin-left: 20px;
     display: flex;
     gap: 20px;
@@ -699,6 +715,7 @@
     flex-direction: column;
     border-radius: 4px;
     background: #fff;
+    transform: translate(0);
   }
 
   .img_card img {
@@ -1009,10 +1026,11 @@
   /* card img */
 
   .img-wrap {
-    width: 768px;
-    height: 573px;
-    overflow: hidden;
+    /* overflow: hidden;
     margin-left: 18 px;
+    display: flex;
+    gap: 8px; */
+    margin-left: 18px;
     display: flex;
     gap: 8px;
   }
@@ -1309,13 +1327,15 @@
 
   /* card img */
 
-  .img-wrap {
-    width: 768px;
-    height: 573px;
-    overflow: hidden;
-    margin-left: 18 px;
+  .img-wraps {
     display: flex;
-    gap: 8px;
+    gap: 200px;
+  }
+  
+  .img-wrap {
+    margin-left: 18px;
+    display: flex;
+    gap: 0px;
   }
   .img_card {
     width: 280px;
