@@ -3,12 +3,9 @@ console.log(rect);
 
 const section01Img = document.querySelector(".section01-sub img");
 const section02Txt = document.querySelector(".section02-txt");
-const section01 = document.querySelector(".section01");
-const section02 = document.querySelector(".section02");
-const section03 = document.querySelector(".section03");
 
 const section01EventFirst = () => {
-  section01Img.style.left = "20px";
+  section01Img.style.width = "90%";
 };
 section01EventFirst();
 

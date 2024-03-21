@@ -10,15 +10,14 @@
 /* section 01 */
 .section01 {
   width: 100%;
-  height: 100vh;
+  height: 1080px;
   /* background: rgb(245, 226, 226); */
   background: linear-gradient(#f5e2e2, #f2c6cf);
   display: flex;
-  align-items: center;
 }
 .section01 .section01-img {
   width: 70%;
-  height: 100vh;
+  height: 100%;
   background: url(./img/about_etude3_img1.jpg) center/cover no-repeat;
 }
 .section01 .section01-img .section01-title {
@@ -27,19 +26,24 @@
 .section01 .section01-sub {
   width: 30%;
   height: 100vh;
-  aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .section01 .section01-sub .seiction01-subimg {
   width: 90%;
-  height: 70%;
+  height: 90%;
   /* width: 100vh;
   height: 100%; */
   background: url(./img/about_etude_title2023.png) center/contain no-repeat;
   /* background-size: contain; */
+  position: absolute;
+  /* right: -30%; */
+  right: -100%;
+  transition: all 1s;
 }
 
 .section01-logo-img {
@@ -544,7 +548,7 @@
 
   .section01 {
     width: 1024px;
-    height: 100vh;
+    height: 1080px;
   }
   .section01 .section01-img {
     width: 665px;
@@ -1331,7 +1335,7 @@
     display: flex;
     gap: 200px;
   }
-  
+
   .img-wrap {
     margin-left: 18px;
     display: flex;
