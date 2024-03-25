@@ -1,0 +1,20 @@
+1. Window.matchMedia()
+
+ex )
+if (window.matchMedia("(min-width: 400px)").matches) {
+  /* 뷰포트 너비가 400 픽셀 이상 */
+} else {
+  /* 뷰포트 너비가 400 픽셀 미만 */
+}
+
+
+2. Element.getBoundingClientRect()
+
+=> 간단한 <div> 엘리먼트의 경계 클라이언트 사각형을 나타내는 DOMRect 객체를 찾고, 해당 객체의 프로퍼티를 그 아래에 출력합니다.
+
+
+자바스크립트 코드 오류 접근
+
+1. 코드 간략화해서 오류 줄이기
+
+2. 좌표값을 수치로 찍지 않고 메서드로 접근해보기
