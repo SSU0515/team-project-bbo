@@ -494,7 +494,6 @@ setInterval(switchFcSlideB, 3000);
 //
 //
 //
-
 //  << foundation-course-B-steps - 스텝 슬라이드 slide >>
 const sloganStepB = document.getElementById("Bslide-steps");
 const slogansB = sloganStepB.getElementsByTagName("div");
