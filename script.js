@@ -7,6 +7,8 @@ const section01EventFirst = () => {
 };
 section01EventFirst();
 
+const section01 = document.querySelector(".section01");
+
 section01Event01 = (e) => {
   if (innerWidth > 768 && scrollY < 1080) {
     if (e.deltaY > 0) {
@@ -49,24 +51,24 @@ section01Event01 = (e) => {
 };
 
 section01Event02 = (e) => {
-  if (innerWidth < 768) {
-    if (scrollY < 1368) {
-      if (e.deltaY > 0) {
-        window.scroll({
-          top: 1368,
-          behavior: "smooth",
-        });
-      } else if (scrollY > 1368 && e.dataY < 0) {
-        window.scroll({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
+  if (innerWidth < 768 && scrollY < 1368) {
+    if (e.deltaY > 0) {
+      window.scroll({
+        top: 1468,
+        behavior: "smooth",
+      });
+    } else if (scrollY > 1368 && e.deltaY < 0) {
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   }
 };
 
-window.addEventListener("wheel", section01Event01);
+console.log(section01Event02);
+
+section01.addEventListener("wheel", section01Event01);
 window.addEventListener("wheel", section01Event02);
 
 const section05Img = document.querySelector(".section05-bgbox");
