@@ -1,4 +1,6 @@
 @import url(./reset.css);
+@import url(./font.css);
+@import url(./header_style.css);
 
 /* common */
 /* #brandPage {
@@ -668,7 +670,7 @@
   .section05-bgbox {
     width: 1024px;
     height: 720px;
-    background: url(./img/Section05.png) center/cover no-repeat;
+    background: url("./img/EM-02_001_about_ETUDE_history_mo_v2_txt.jpg") center/cover no-repeat;
     position: relative;
   }
   .section05-text {
