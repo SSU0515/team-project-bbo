@@ -928,11 +928,12 @@
     position: relative;
   }
   .section01 .section01-img .section01-title {
+    font-family: "subway";
     position: absolute;
     bottom: 0;
     display: block;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     line-height: 40px;
   }
@@ -987,7 +988,7 @@
   }
 
   .section03-box-right .section03-imgpackage img {
-    display: none;
+    display: block;
   }
   .section03-box-right .section03-imgpackage .section03-right-img {
     background: url(/img/about_etude2023_img3.jpg) center/contain no-repeat;
@@ -1087,7 +1088,6 @@
     display: flex;
     gap: 115px;
   }
-
 
   .img-wrap {
     /* overflow: hidden;
@@ -1297,9 +1297,18 @@
   .section01 .section01-sub {
     display: none;
   }
+  .section01 .section01-img .section01-title {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+  }
   .section02 {
     width: 390px;
-    height: 693px;
+    height: 793px;
   }
   .section02 .section02-img {
     width: 100%;
@@ -1378,7 +1387,8 @@
   .section05-bgbox {
     width: 390px;
     height: 1100px;
-    background: url(./img/Section05.png) center/cover no-repeat;
+    background: url(./img/EM-02_001_about_ETUDE_history_mo_v2_txt.jpg)
+      center/cover no-repeat;
     position: relative;
   }
   .section05-text {
@@ -1418,12 +1428,13 @@
   /* card img */
 
   .img-wraps {
+    overflow-x: auto;
     display: flex;
-    gap: 200px;
+    gap: 230px;
   }
 
   .img-wrap {
-    margin-left: 18px;
+    margin-left: 218px;
     display: flex;
     gap: 0px;
   }
@@ -1507,20 +1518,50 @@
   .img_card:nth-child(6) {
     position: static;
   }
-
+  /* 
   .img-wrap02 {
     position: static;
-    width: 390px;
+    width: 100px;
     height: 195px;
     display: flex;
     margin-left: 0px;
     margin-top: 0px;
+    opacity: 1;
+  }
+  
+  .section06Simg01 {
+    width: 100px;
+    opacity: 1;
   }
 
-  .imgWrap02Event {
+  .section06img02 {
+    width: 100px;
     opacity: 1;
+  } */
+
+  .img-wrap02 {
+    position: static;
+    margin-top: -200px;
+    width: 100%;
+    height: 195px;
+    display: flex;
+    min-width: 0px;
+  }
+
+  .section06Simg01 {
+    width: 195px;
+    transition: all 2s;
+    opacity: 1;
+    transform: scale(0.5);
+    margin-left: -95px;
+  }
+
+  .section06Simg02 {
+    width: 195px;
     transition: all 1s;
-    transform: scale(1);
+    opacity: 1;
+    transform: scale(0.5);
+    margin-left: -192px;
   }
 
   .img-wrap03 {
